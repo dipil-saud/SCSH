@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<%= stylesheet_link_tag "style" %><%= stylesheet_link_tag 'style2' %>
+	</head>
+	<body>
+		<table border=1>
+			<th align='Center'> Subject </th>
+			<th align='Center'> Predicate </th>
+			<th align='center'> Object </th> 
+			<% @triples.each { |triple| %>
+			<tr>
+				<td align='center' ><%= link_to triple.subject.uri.to_s, :controller => "course", :action => "view_details", :uri => triple.subject.uri.to_s %></td>
+				<td align='center'><%= triple.predicate.uri.to_s %></td>
+				<% if triple.object.node_type == 'NODE_TYPE_RESOURCE' -%>
+				<td align='center'><%= link_to_remote triple.object.uri.to_s, 
+                                       :update => 'details', 
+                                       :url => { :controller => "course", :action => "view_details", :uri => triple.object.uri.to_s }  %>
+				</td>
+				<% else -%>                       
+				<td align='center'><%= triple.object.literal.value %>
+			    </td>
+
+				<%end -%>						
+			</tr>
+			<% }%>
+		</table>
+		
+	</body>
+</html>

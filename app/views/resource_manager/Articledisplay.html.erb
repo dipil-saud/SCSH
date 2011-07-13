@@ -1,0 +1,49 @@
+Article Title: <%= @newresource.title %>
+		
+		<br/><br/>
+		<% if @newresource.abstract -%>
+Abstract: <%= @newresource.abstract %>
+		
+		<br/><br/>	<% end -%>	
+Authors: <% author,uri = @newresource.author -%>
+		<% for k in 0..author.length-1 -%>
+            
+		<a href = "<%= uri[k] %>"><%= author[k] %></a><br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<% end -%>
+		<br/>
+
+Published in: <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<% if @newresource.journal.length>0 -%>
+		Journal<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<% journal,uri = @newresource.journal -%>
+		<% for k in 0..journal.length-1 -%>
+            
+		<a href = "<%= uri[k] %>"><%= journal[k] %></a>
+		<% end -%>
+		<br/><% end -%>
+		<% if @newresource.pagenumbers.length >0 -%>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Volume <%= @newresource.has_volume %>&nbsp;&nbsp;&nbsp;&nbsp;Issue <%= @newresource.number %> 
+		,&nbsp;&nbsp;<% @newresource.date.each { |t| -%>
+		<%= t %>
+		<% } -%>
+		<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Pages &nbsp;&nbsp;&nbsp;  <%= @newresource.pagenumbers %>
+		</t> <br/><br/>
+		
+		<% else -%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Date: <% @newresource.date.each { |t| -%>
+		<%= t %>
+		<% } -%>
+		<% end -%>
+		
+		<br/><br/>
+See Article: <% @newresource.uri_see.each { |t| -%>
+		<a href="<%= t %>"><%= t %></a><br/>
+		<% } -%>
+		<br/>
+
+
+Source: <a href="<%= @newresource.get_URI %>"><%= @newresource.get_URI %></a>
+<br/><br/>

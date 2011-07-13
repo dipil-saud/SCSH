@@ -1,0 +1,58 @@
+<%= javascript_include_tag :defaults %>
+
+<% if @title.length > 0 %>
+			<ul>
+			<% for k in 0..@title.length-1 %> 
+		    <li><%= @title[k] %>
+			    <%= link_to_remote "Details",
+                :update => 'resource',
+    			:url => { :controller => 'resource_manager' , :action => 'new_resource' , :uri => @uri[k] , :type => params[:type]}, 
+                :before => "$('indicator').show(  )",  			
+    			:complete => "$('indicator').hide(  )"
+				%>	
+			</li>				
+			<% end %>
+			</ul>
+			<% end %>
+			
+	<% if params[:type] == "Fact" %>
+	<% if @uri1.length > 0 %>
+			<ul>
+				
+			<% for k in 0..@uri1.length-1 %> 
+			
+		    <li><%= @uri1[k].sub("http://dbpedia.org/resource/","")  %>
+			    <%= link_to_remote "Details",
+                :update => 'resource',
+    			:url    => { :controller => 'resource_manager' , :action => 'new_resource' , :uri => @uri1[k] , :type => "Fact"}, 
+                :before => "$('indicator').show(  )",  			
+    			:complete => "$('indicator').hide(  )"
+				%>	
+			</li>				
+			<% end %>
+			</ul>
+			<% else -%>
+			<%= "No Results Found" %>
+			<% end %>
+			<% end %>
+			<% if params[:type] == "Twitter" %>
+	<% if @status.length > 0 %>
+			<ul>
+				
+			<% for k in 0..@status.length-1 %> 
+			
+		    <li><%= @status[k]  %><%= link_to_remote "Details",
+                :update => 'resource',
+    			:url    => { :controller => 'resource_manager' , :action => 'new_resource' , :date => @status_created[k] , :status=> @status[k], :type => "Twitter"},
+ 				:before => "$('indicator').show(  )",  			
+    			:complete => "$('indicator').hide(  )"
+				%>	
+			
+			
+			    </li>				
+			<% end %>
+			</ul>
+			<% else -%>
+			<%= "No Results Found" %>
+			<% end %>
+			<% end %>

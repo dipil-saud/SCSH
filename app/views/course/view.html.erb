@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		
+				<%= javascript_include_tag :defaults %>
+				
+				
+	</head>
+	<body>
+		
+		<br/>
+		<br/>
+		<% form_tag ({:action => 'view_select', :option => params[:option]}) do%>
+    	<%= select_tag(:id, options_for_select(["Select Type"])+options_for_select(@select_array.collect{ |u| [u.to_s, u.to_s] }), 
+                       options = { :onChange => remote_function(:update => 'select', :url => {:action => 'view_select', :option => params[:option]}, :with => "'id=' + this.value") }  ) %>
+    	<!-- <%= submit_tag 'Select' %> -->  
+		<% end -%>
+		
+		<br/>
+		<div id = "select">
+		</div>
+	</body>
+</html>

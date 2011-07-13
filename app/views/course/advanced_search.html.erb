@@ -1,0 +1,59 @@
+<head> 
+<style type="text/css">
+	fieldset legend {
+        font-weight: bold;
+	font-size: 13px;
+	padding-right: 10px;
+	color: #333;
+}
+
+fieldset form {
+	padding-top: 15px;
+}
+
+fieldset p label {
+	float: left;
+	width: 150px;
+}
+</style>
+</head>
+
+<fieldset>
+	<h3>Advanced Search <span class = 'class1'>
+		<%= link_to_remote "Simple", { :update => "search", :url => { :action => "search" , :home => "yes"}}, {:class => 'white'} %>
+		</span></h3>
+<% form_remote_tag :update => "Results", 
+                           :url => {:action =>"perform_search", :searchtype =>"advanced"} do %>
+		
+		<label title="Search Type of Resource to Search">Select Type:</label><%= select_tag  "option", "<option>All</option><option>Course</option><option>Topic</option><option>Subtopic</option>", 
+                                    options = { :onChange => remote_function(:update => 'details', :url => {:action => "advanced_search_form"}, :with => "'option=' + this.value") }     
+                   %>
+		&nbsp;&nbsp;&nbsp;&nbsp;<label title="Search in Name">Name:</label>&nbsp;&nbsp; <%= text_field_tag  :search %>
+		
+		<div id = 'details'>
+			    <table>
+<tr><td>Course Objectives</td><td><%= text_field_tag :objectives %></td></tr>
+<tr><td>Course References</td><td><%= text_field_tag :references %></td></tr>
+<tr><td>Lecture Hrs<%= select_tag  "hoursLectureOperator", "<option>&gt</option><option>&lt</option>" %></td><td><%= text_field_tag "hoursLecture", '', :size => 3 %></td></tr>
+<tr><td>Tutorial Hrs<%= select_tag  "hoursTutorialOperator", "<option>&gt</option><option>&lt</option>" %></td><td><%= text_field_tag "hoursTutorial", '', :size => 3 %></td></tr>
+<tr><td>Lab Hrs<%= select_tag  "hoursLabOperator", "<option>&gt</option><option>&lt</option>" %></td><td><%= text_field_tag "hoursLab", '', :size => 3 %></td></tr>
+<tr><td>Course Taught At</td><td><%= text_field_tag :hasSchool %></td></tr>
+<tr><td>Published By</td><td><%= text_field_tag :publisher %></td></tr>
+<tr><!-- start topics --><td>
+Topic Total Hrs<%= select_tag  "hoursOperator", "<option>&gt</option><option>&lt</option>" %></td><td><%= text_field_tag "hours", '', :size => 3 %>
+</td></tr>
+<tr><!-- start subtopics --><td>
+Subtopic Description</td> <td><%= text_field_tag :shortDesc %></td>
+</tr>
+</table>
+			
+			
+			
+		</div>					
+		<p>
+		 <%= submit_tag 'Search' %>
+		</p>
+		
+		
+		<% end %>
+		</fieldset>

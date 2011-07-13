@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Navigate Course</title>
+	</head>
+	<body>
+		<div id = 'leftcontent'>
+		<h3> Select Curriculum </h3><br/>
+		<% form_tag({:action => @redirect }) do%>
+    	<%= select_tag :uri, options_for_select(["Select  Curriculum"]) +options_for_select(@curriculum_uris.collect{ |u| [@curriculum_names[@curriculum_uris.index(u)] , u] }), 					  
+					   options = { :onChange => remote_function(:update => 'navigate_menu', :url => {:action => 'navigateMenu'}, :with => "'uri=' + this.value") }  %>
+		<!-- <%= submit_tag 'Select' %> -->  
+		<% end -%>
+		</div>
+		<br/>
+		<div id="navigate_menu" style="margin-top:30px">
+			
+		</div>
+		
+	</body>
+</html>

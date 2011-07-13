@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<%= javascript_include_tag "jquery-1.2.1.min"%>
+		<%= javascript_include_tag "menu-collapsed"%>
+		<%= stylesheet_link_tag 'course_style' %>  
+	</head>
+	<body>
+		<h2>Full Course View</h2>
+	
+	<div id =course">
+	<ul id="menu">
+		<% @course_uris.each do |course_uri| -%>
+		<li> 
+			<a href="#"><%= @course_names[@course_uris.index(course_uri)] %></a>
+			<% @topic_uris = [] %>
+			<% @topic_names = [] %>
+			<% course = @courseModel.model.get_resource(course_uri) %>
+			<% topics = course.get_properties(@skos['narrower']) %>
+			<ul>
+			<% course.get_properties(@skos['narrower']).each do |topic| -%>
+					<% topic_name = @courseModel.model.object( topic, @ioe['name'])%>
+						<li><a href="#"><%= topic_name.literal.value %></a>
+						    <% topic_res = @courseModel.model.get_resource(topic.uri.to_s) %>							
+							<ul>	                                   
+									<% topic_res.get_properties(@dcterms['hasPart']).each do |subtopic| %>
+									<% st_desc = @courseModel.model.object( subtopic, @ioe['shortDesc']) %>   
+									<% if st_desc %>
+										<li><a href=""><%= st_desc.literal.value %></a></li>
+									<% else %>
+									    <li><a href=""><%= @courseModel.model.object( subtopic, @ioe['name']).literal.value %></a></li>
+									<% end %>
+                 					<% end %><!-- end subtopic loop -->
+						   </ul>
+						</li>
+			<% end %> <!-- end topic loop -->
+			</ul>	
+		   
+				
+		</li>
+		<% end -%>
+		
+	</ul>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">  
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">  
+
+<head>  
+  		 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		 <title>Results</title>  
+  		 <%= stylesheet_link_tag "style" %>  
+  		 <%= javascript_include_tag :defaults %>
+		</head>  
+  
+<body>  
+
+
+<div id="tabbed_box_1" class="tabbed_box">  
+  
+  <h4>Semantic Search <small>Type in search box then choose tab<br/><br/>
+ 
+  <% form_tag({ :controller => "say", :action => "advanced_search"} , :method => "get" ) do%>
+  					 Book_Title: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= text_field_tag :title, params[:title] %><br/>
+					 Publisher: &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<%= text_field_tag :publisher, params[:publisher] %>
+					<br/>
+					Issued Date (Before):  &nbsp;&nbsp;<%= text_field_tag :date_b, params[:date_b],:size=>15 %><br/>
+					Issued Date (After):  &nbsp;&nbsp;&nbsp;&nbsp;<%= text_field_tag :date_a, params[:date_a],:size=>15 %>
+					<br/>
+					Chapter_Name:  <%= text_field_tag :chapter, params[:chapter] %><br/>
+					<br/>
+					<button type="submit" class = 'vvsmall awesome'>Advanced Search</button></p>
+					<!--<%= submit_tag "Advanced Search", :name => nil %>-->
+<% end %></small></h4> 
+  <h4><small>Displaying Results For Books  </small><strong><%=  @publisher_phrase %> </strong></h4> 
+  
+ 
+   
+  <div class="tabbed_area">  
+  
+      <ul class="tabs">  
+    <li><a href="" id="tab_1" class="active">Books</a>
+	</li>  
+    
+	
+	
+</ul>  
+  
+     <div id="content_1" class="content">
+     	
+     	<% if @title.length > 0 %>
+			<ul>
+			<% for k in 0..@title.length-1 %> 
+		    <li><%= @title[k] %>
+			<%#= link_to_remote "Quick View",
+                :update => 'resource',
+    			:url    => { :action => 'quick_bookview' , :uri => @uri[k],
+								:publisher => @publisher[k], :title => @title[k], :date=> @date[k],
+								:chapter => @chapter[k], :page => @page[k], :ch_uri=>@ch_uri[k] }
+				 %>
+
+			<%= link_to_remote "Details",
+                :update => 'resource',
+    			:url    => { :controller => 'resource_manager' , :action => 'new_resource' , 
+								:uri => @uri[k] , :type => "Book"},
+				:before   => "$('indicator').show(  )",
+    			
+    			:complete => "$('indicator').hide(  )" %>
+			
+				<%#= @publisher %>			
+			<% end %>
+			</ul>
+			<% else %>
+			 <%= "" %>
+			<% end %>	    			
+	 </div>  
+	 
+    
+
+   </div>  
+  
+   <div id="content-footer">
+		
+		<div class="content-section">
+		<h3>Details</h3>
+		<span id="indicator" style="display: none; text-align:center; margin-left:auto; margin-right:auto;">
+			<img src="/images/ajax-loader.gif" align='center' style=" display: block; margin-left: auto;  margin-right: auto;" />
+		</span>
+		<p> <div id="resource"></div></p>
+		
+		
+		</div>
+	
+   </div>
+ 
+ <div id="footer-spacer"></div>
+
+</div>  
+
+
+
+
+</body>  
+</html>
+
+
+

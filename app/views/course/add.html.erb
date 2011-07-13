@@ -1,0 +1,24 @@
+<% if @curriculum_select == false %>
+<% form_remote_tag( :update => "propertyselect" , :url=> {:action => 'add_form', :uri => params[:uri] } ) do %>
+<%= select_tag :type, options_for_select(@property_uris.collect{ |u| [@property_names[@property_uris.index(u)] , u] }) %>
+<%= submit_tag 'Select' %>
+<% end -%>
+<div id = "propertyselect">
+</div>
+<%else %>
+<% form_tag({:action => 'update_courses_curriculum', :uri => params[:uri] }) do %>
+<% @choices = Array.new(1) %>
+<ul>
+    <% @choices.each do |choice| %>
+    <li>
+        Course &nbsp;<%= select_tag  "course_uri[]", options_for_select(@courses.collect{ |u| [@coursenames[@courses.index(u)] , u ] }) %>&nbsp;&nbsp;&nbsp;
+        Semester&nbsp;<%= select_tag  "semester_no[]", options_for_select(@semesters.collect{ |u| [ @semester_names[@semesters.index(u)], u ] }) %>
+        &nbsp;&nbsp;<%= link_to_function 'Add Another', 'var
+        c=this.parentNode;c.parentNode.insertBefore(c.cloneNode(true),c)' %>
+        <br/>
+    </li>
+    <% end %>
+</ul>
+<%= submit_tag "Add" %>
+<% end %>
+<%end %>

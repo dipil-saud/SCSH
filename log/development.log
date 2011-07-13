@@ -76,3 +76,1266 @@ ActionController::RoutingError (No route matches "/" with {:method=>:get}):
   vendor/bundler_gems/ruby/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
 
 Rendering rescues/layout (not_found)
+
+
+Processing SayController#index (for 127.0.0.1 at 2011-07-13 23:06:32) [GET]
+Rendering template within layouts/application
+Rendering say/index
+Completed in 30ms (View: 25, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2011-07-13 23:06:51) [GET]
+Rendering template within layouts/application
+Rendering say/hello
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing ApplicationController#search (for 127.0.0.1 at 2011-07-13 23:06:56) [GET]
+
+MissingSourceFile (no such file to load -- rdf):
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+  app/controllers/course_controller.rb:4
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:361:in `constantize'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:360:in `each'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:360:in `constantize'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/string/inflections.rb:162:in `constantize'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:443:in `recognize'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:436:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  vendor/bundler_gems/ruby/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+
+Rendered rescues/_trace (41.5ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#navigate (for 127.0.0.1 at 2011-07-13 23:07:08) [GET]
+
+MissingSourceFile (no such file to load -- rdf):
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+  app/controllers/course_controller.rb:4
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:361:in `constantize'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:360:in `each'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:360:in `constantize'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/string/inflections.rb:162:in `constantize'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:443:in `recognize'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:436:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  vendor/bundler_gems/ruby/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+
+Rendered rescues/_trace (170.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CourseController#navigate (for 127.0.0.1 at 2011-07-13 23:10:30) [GET]
+Rendering template within layouts/application
+Rendering course/navigate
+Completed in 226ms (View: 19, DB: 0) | 200 OK [http://localhost/course]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:10:33) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA="}
+Rendering course/navigateMenu
+Completed in 1500ms (View: 1177, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2011-07-13 23:10:39) [GET]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/course45", "courseSearch"=>"true", "search"=>"Mathematics I"}
+Rendering template within layouts/application
+Rendering say/hello
+Completed in 23776ms (View: 61, DB: 0) | 200 OK [http://localhost/search?courseSearch=true&search=Mathematics+I&uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fcourse45]
+
+
+Processing SayController#generate_content (for 127.0.0.1 at 2011-07-13 23:11:18) [POST]
+  Parameters: {"authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA=", "type"=>"Twitter", "search"=>"Mathematics I"}
+
+MissingSourceFile (no such file to load -- twitter):
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+  app/models/twittertest.rb:4
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:437:in `load_missing_constant'
+  vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:96:in `const_missing'
+  app/controllers/say_controller.rb:111:in `generate_content'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  vendor/bundler_gems/ruby/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+
+Rendered rescues/_trace (36.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SayController#hello (for 127.0.0.1 at 2011-07-13 23:14:18) [GET]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/course45", "courseSearch"=>"true", "search"=>"Mathematics I"}
+Rendering template within layouts/application
+Rendering say/hello
+Completed in 28248ms (View: 99, DB: 0) | 200 OK [http://localhost/search?courseSearch=true&search=Mathematics+I&uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fcourse45]
+
+
+Processing SayController#index (for 127.0.0.1 at 2011-07-13 23:14:46) [GET]
+Rendering template within layouts/application
+Rendering say/index
+Completed in 38ms (View: 36, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing SayController#generate_content (for 127.0.0.1 at 2011-07-13 23:14:55) [POST]
+  Parameters: {"authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA=", "type"=>"Article", "search"=>"Mathematics I"}
+
+Timeout::Error (execution expired):
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/timeout.rb:64:in `rbuf_fill'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/net/protocol.rb:134:in `rbuf_fill'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/net/protocol.rb:116:in `readuntil'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/net/protocol.rb:126:in `readline'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/net/http.rb:2028:in `read_status_line'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/net/http.rb:2017:in `read_new'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/net/http.rb:1051:in `request'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/open-uri.rb:248:in `open_http'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/net/http.rb:543:in `start'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/open-uri.rb:242:in `open_http'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/open-uri.rb:616:in `buffer_open'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/open-uri.rb:164:in `open_loop'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/open-uri.rb:162:in `catch'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/open-uri.rb:162:in `open_loop'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/open-uri.rb:132:in `open_uri'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/open-uri.rb:518:in `open'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/open-uri.rb:30:in `open'
+  app/controllers/sparql_client.rb:39:in `query'
+  app/models/query.rb:23:in `execute'
+  app/models/endpointa.rb:90:in `query'
+  app/controllers/say_controller.rb:102:in `generate_content'
+  app/controllers/say_controller.rb:101:in `each'
+  app/controllers/say_controller.rb:101:in `generate_content'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+  vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+  vendor/bundler_gems/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  vendor/bundler_gems/ruby/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+
+Rendered rescues/_trace (40.8ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SayController#generate_content (for 127.0.0.1 at 2011-07-13 23:15:58) [POST]
+  Parameters: {"authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA=", "type"=>"Fact", "search"=>"Mathematics I"}
+Rendering say/generate_content
+Completed in 7852ms (View: 31, DB: 0) | 200 OK [http://localhost/say/generate_content?search=Mathematics+I&type=Fact]
+
+
+Processing SayController#generate_content (for 127.0.0.1 at 2011-07-13 23:16:05) [POST]
+  Parameters: {"authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA=", "type"=>"Twitter", "search"=>"Mathematics I"}
+Rendering say/generate_content
+Completed in 3398ms (View: 227, DB: 0) | 200 OK [http://localhost/say/generate_content?search=Mathematics+I&type=Twitter]
+
+
+Processing SayController#generate_content (for 127.0.0.1 at 2011-07-13 23:16:09) [POST]
+  Parameters: {"authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA=", "type"=>"Book", "search"=>"Mathematics I"}
+Rendering say/generate_content
+Completed in 1618ms (View: 12, DB: 0) | 200 OK [http://localhost/say/generate_content?search=Mathematics+I&type=Book]
+
+
+Processing ResourceManagerController#new_resource (for 127.0.0.1 at 2011-07-13 23:16:11) [POST]
+  Parameters: {"uri"=>"http://dblp.l3s.de/d2r/resource/publications/books/daglib/0007497", "authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA=", "type"=>"Book"}
+Rendering resource_manager/Bookdisplay
+Completed in 1147ms (View: 10, DB: 0) | 200 OK [http://localhost/resource_manager/new_resource?type=Book&uri=http%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fpublications%2Fbooks%2Fdaglib%2F0007497]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2011-07-13 23:16:14) [GET]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/course45", "courseSearch"=>"true", "search"=>"Mathematics I"}
+Rendering template within layouts/application
+Rendering say/hello
+Completed in 14198ms (View: 123, DB: 0) | 200 OK [http://localhost/search?courseSearch=true&search=Mathematics+I&uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fcourse45]
+
+
+Processing SayController#generate_content (for 127.0.0.1 at 2011-07-13 23:16:31) [POST]
+  Parameters: {"authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA=", "type"=>"Fact", "search"=>"Mathematics I"}
+Rendering say/generate_content
+Completed in 1595ms (View: 30, DB: 0) | 200 OK [http://localhost/say/generate_content?search=Mathematics+I&type=Fact]
+
+
+Processing ResourceManagerController#new_resource (for 127.0.0.1 at 2011-07-13 23:16:42) [POST]
+  Parameters: {"uri"=>"http://dbpedia.org/resource/I", "authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA=", "type"=>"Fact"}
+Rendering resource_manager/Factdisplay
+Completed in 34614ms (View: 25, DB: 0) | 200 OK [http://localhost/resource_manager/new_resource?type=Fact&uri=http%3A%2F%2Fdbpedia.org%2Fresource%2FI]
+
+
+Processing ResourceManagerController#new_resource (for 127.0.0.1 at 2011-07-13 23:18:00) [POST]
+  Parameters: {"uri"=>"http://dbpedia.org/resource/Mathematics", "authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA=", "type"=>"Fact"}
+Rendering resource_manager/Factdisplay
+Completed in 4253ms (View: 19, DB: 0) | 200 OK [http://localhost/resource_manager/new_resource?type=Fact&uri=http%3A%2F%2Fdbpedia.org%2Fresource%2FMathematics]
+
+
+Processing SayController#generate_content (for 127.0.0.1 at 2011-07-13 23:18:13) [POST]
+  Parameters: {"authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA=", "type"=>"Twitter", "search"=>"Mathematics I"}
+Rendering say/generate_content
+Completed in 3642ms (View: 423, DB: 0) | 200 OK [http://localhost/say/generate_content?search=Mathematics+I&type=Twitter]
+
+
+Processing ResourceManagerController#new_resource (for 127.0.0.1 at 2011-07-13 23:18:21) [POST]
+  Parameters: {"authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA=", "date"=>"Wed, 13 Jul 2011 23:14:44 +0545", "type"=>"Twitter", "status"=>"@CMJaymmotla cross roads.. dope track homie &quot;It's like mathematics, I'm solving an x&quot;"}
+Rendering resource_manager/Twitterdisplay
+Completed in 91ms (View: 82, DB: 0) | 200 OK [http://localhost/resource_manager/new_resource?date=Wed%2C+13+Jul+2011+23%3A14%3A44+%2B0545&status=%40CMJaymmotla+cross+roads..+dope+track+homie+%26quot%3BIt%27s+like+mathematics%2C+I%27m+solving+an+x%26quot%3B&type=Twitter]
+
+
+Processing ResourceManagerController#new_resource (for 127.0.0.1 at 2011-07-13 23:18:25) [POST]
+  Parameters: {"authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA=", "date"=>"Wed, 13 Jul 2011 22:45:11 +0545", "type"=>"Twitter", "status"=>"This is the only time I am not doing any mathematics! ;)"}
+Rendering resource_manager/Twitterdisplay
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/resource_manager/new_resource?date=Wed%2C+13+Jul+2011+22%3A45%3A11+%2B0545&status=This+is+the+only+time+I+am+not+doing+any+mathematics%21+%3B%29&type=Twitter]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2011-07-13 23:18:34) [GET]
+  Parameters: {"search"=>"Ac milan"}
+Rendering template within layouts/application
+Rendering say/hello
+Completed in 2650ms (View: 11, DB: 0) | 200 OK [http://localhost/search?search=Ac+milan]
+
+
+Processing SayController#generate_content (for 127.0.0.1 at 2011-07-13 23:18:39) [POST]
+  Parameters: {"authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA=", "type"=>"Twitter", "search"=>"Ac milan"}
+Rendering say/generate_content
+Completed in 2829ms (View: 169, DB: 0) | 200 OK [http://localhost/say/generate_content?search=Ac+milan&type=Twitter]
+
+
+Processing ResourceManagerController#new_resource (for 127.0.0.1 at 2011-07-13 23:18:46) [POST]
+  Parameters: {"authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA=", "date"=>"Wed, 13 Jul 2011 23:18:13 +0545", "type"=>"Twitter", "status"=>"Palermo's Javier Pastore admits AC Milan would be an attractive destination http://pulse.me/s/Fdu4"}
+Rendering resource_manager/Twitterdisplay
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/resource_manager/new_resource?date=Wed%2C+13+Jul+2011+23%3A18%3A13+%2B0545&status=Palermo%27s+Javier+Pastore+admits+AC+Milan+would+be+an+attractive+destination+http%3A%2F%2Fpulse.me%2Fs%2FFdu4&type=Twitter]
+
+
+Processing SayController#generate_content (for 127.0.0.1 at 2011-07-13 23:18:59) [POST]
+  Parameters: {"authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA=", "type"=>"Book", "search"=>"Ac milan"}
+Rendering say/generate_content
+Completed in 2661ms (View: 2, DB: 0) | 200 OK [http://localhost/say/generate_content?search=Ac+milan&type=Book]
+
+
+Processing SayController#advanced_search (for 127.0.0.1 at 2011-07-13 23:19:07) [GET]
+Rendering template within layouts/application
+Rendering say/advanced_search
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/search/Book]
+
+
+Processing SayController#ad_article (for 127.0.0.1 at 2011-07-13 23:19:13) [GET]
+Rendering template within layouts/application
+Rendering say/ad_article
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/search/article]
+
+
+Processing SayController#index (for 127.0.0.1 at 2011-07-13 23:19:16) [GET]
+Rendering template within layouts/application
+Rendering say/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing CourseController#search (for 127.0.0.1 at 2011-07-13 23:19:23) [GET]
+Rendering template within layouts/application
+Rendering course/search
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://localhost/course/search]
+
+
+Processing CourseController#advanced_search (for 127.0.0.1 at 2011-07-13 23:19:26) [POST]
+  Parameters: {"authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA="}
+Rendering course/advanced_search
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://localhost/course/advanced_search]
+
+
+Processing CourseController#search (for 127.0.0.1 at 2011-07-13 23:19:30) [POST]
+  Parameters: {"authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA=", "home"=>"yes"}
+Rendering course/search
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/course/search?home=yes]
+
+
+Processing CourseController#view_all (for 127.0.0.1 at 2011-07-13 23:19:33) [GET]
+Rendering template within layouts/application
+Rendering course/view_all
+Completed in 890ms (View: 712, DB: 0) | 200 OK [http://localhost/course/fullview]
+
+
+Processing CourseController#view (for 127.0.0.1 at 2011-07-13 23:19:54) [GET]
+Rendering template within layouts/application
+Rendering course/view
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://localhost/course/view]
+
+
+Processing CourseController#view_select (for 127.0.0.1 at 2011-07-13 23:19:57) [POST]
+  Parameters: {"authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA=", "id"=>"Course"}
+Rendering course/view_select
+Completed in 254ms (View: 8, DB: 0) | 200 OK [http://localhost/course/view_select]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:20:00) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/course1", "authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA="}
+Rendering course/view_details
+Completed in 221ms (View: 55, DB: 0) | 200 OK [http://localhost/course/view_details]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:20:12) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA="}
+Rendering course/view_details
+Completed in 546ms (View: 197, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fcurriculum1]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:20:22) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/course3", "authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA="}
+Rendering course/view_details
+Completed in 266ms (View: 110, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fcourse3]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:20:29) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/topic15", "authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA="}
+Rendering course/view_details
+Completed in 208ms (View: 28, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Ftopic15]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:20:32) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/subtopic52", "authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA="}
+Rendering course/view_details
+Completed in 166ms (View: 8, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fsubtopic52]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:20:33) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/topic15", "authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA="}
+Rendering course/view_details
+Completed in 175ms (View: 19, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Ftopic15]
+
+
+Processing CourseController#search (for 127.0.0.1 at 2011-07-13 23:20:39) [GET]
+Rendering template within layouts/application
+Rendering course/search
+Completed in 80ms (View: 78, DB: 0) | 200 OK [http://localhost/course/search]
+
+
+Processing CourseController#perform_search (for 127.0.0.1 at 2011-07-13 23:20:42) [POST]
+  Parameters: {"commit"=>"Search", "searchtype"=>"simple", "authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA=", "search"=>"another"}
+Rendering course/perform_search
+Completed in 213ms (View: 4, DB: 0) | 200 OK [http://localhost/course/perform_search?searchtype=simple]
+
+
+Processing CourseController#perform_search (for 127.0.0.1 at 2011-07-13 23:20:48) [POST]
+  Parameters: {"commit"=>"Search", "searchtype"=>"simple", "authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA=", "search"=>"computer"}
+Rendering course/perform_search
+Completed in 185ms (View: 7, DB: 0) | 200 OK [http://localhost/course/perform_search?searchtype=simple]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:20:50) [GET]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/course1", "navigation"=>"true"}
+Rendering template within layouts/application
+Rendering course/view_details
+Completed in 322ms (View: 69, DB: 0) | 200 OK [http://localhost/course/view_details?navigation=true&uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fcourse1]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:20:56) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA="}
+Rendering course/view_details
+Completed in 376ms (View: 203, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fcurriculum1]
+
+
+Processing CourseController#view (for 127.0.0.1 at 2011-07-13 23:21:05) [GET]
+Rendering template within layouts/application
+Rendering course/view
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/course/view]
+
+
+Processing CourseController#navigate (for 127.0.0.1 at 2011-07-13 23:21:12) [GET]
+Rendering template within layouts/application
+Rendering course/navigate
+Completed in 222ms (View: 15, DB: 0) | 200 OK [http://localhost/course]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:21:17) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA="}
+Rendering course/navigateMenu
+Completed in 1225ms (View: 1067, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing SayController#index (for 127.0.0.1 at 2011-07-13 23:21:24) [GET]
+Rendering template within layouts/application
+Rendering say/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2011-07-13 23:21:37) [GET]
+Rendering template within layouts/application
+Rendering say/hello
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SayController#advanced_search (for 127.0.0.1 at 2011-07-13 23:21:42) [GET]
+Rendering template within layouts/application
+Rendering say/advanced_search
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/search/Book]
+
+
+Processing SayController#advanced_search (for 127.0.0.1 at 2011-07-13 23:21:48) [GET]
+Rendering template within layouts/application
+Rendering say/advanced_search
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/search/Book]
+
+
+Processing CourseController#search (for 127.0.0.1 at 2011-07-13 23:22:00) [GET]
+Rendering template within layouts/application
+Rendering course/search
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/course/search]
+
+
+Processing CourseController#view_all (for 127.0.0.1 at 2011-07-13 23:22:02) [GET]
+Rendering template within layouts/application
+Rendering course/view_all
+Completed in 865ms (View: 677, DB: 0) | 200 OK [http://localhost/course/fullview]
+
+
+Processing CourseController#view (for 127.0.0.1 at 2011-07-13 23:22:06) [GET]
+Rendering template within layouts/application
+Rendering course/view
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/course/view]
+
+
+Processing CourseController#navigate (for 127.0.0.1 at 2011-07-13 23:22:11) [GET]
+Rendering template within layouts/application
+Rendering course/navigate
+Completed in 227ms (View: 7, DB: 0) | 200 OK [http://localhost/course]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:22:14) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"nh7ieGwNCEgzudLK2mJI1BxjbSlPvgBaogAEufn88xA="}
+Rendering course/navigateMenu
+Completed in 1299ms (View: 1118, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing SayController#index (for 127.0.0.1 at 2011-07-13 23:22:24) [GET]
+Rendering template within layouts/application
+Rendering say/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2011-07-13 23:23:45) [GET]
+Rendering template within layouts/application
+Rendering say/hello
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2011-07-13 23:24:14) [GET]
+Rendering template within layouts/application
+Rendering say/hello
+Completed in 71ms (View: 44, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SayController#index (for 127.0.0.1 at 2011-07-13 23:24:24) [GET]
+Rendering template within layouts/application
+Rendering say/index
+Completed in 30ms (View: 18, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2011-07-13 23:24:58) [GET]
+Rendering template within layouts/application
+Rendering say/hello
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SayController#advanced_search (for 127.0.0.1 at 2011-07-13 23:25:00) [GET]
+Rendering template within layouts/application
+Rendering say/advanced_search
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/search/Book]
+
+
+Processing SayController#advanced_search (for 127.0.0.1 at 2011-07-13 23:25:05) [GET]
+Rendering template within layouts/application
+Rendering say/advanced_search
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/search/Book]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2011-07-13 23:25:53) [GET]
+Rendering template within layouts/application
+Rendering say/hello
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SayController#advanced_search (for 127.0.0.1 at 2011-07-13 23:26:01) [GET]
+Rendering template within layouts/application
+Rendering say/advanced_search
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/search/Book]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2011-07-13 23:26:27) [GET]
+Rendering template within layouts/application
+Rendering say/hello
+Completed in 81ms (View: 70, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2011-07-13 23:26:30) [GET]
+Rendering template within layouts/application
+Rendering say/hello
+Completed in 46ms (View: 43, DB: 0) | 200 OK [http://localhost/search]
+
+
+Processing SayController#advanced_search (for 127.0.0.1 at 2011-07-13 23:26:32) [GET]
+Rendering template within layouts/application
+Rendering say/advanced_search
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/search/Book]
+
+
+Processing SayController#advanced_search (for 127.0.0.1 at 2011-07-13 23:28:37) [GET]
+  Parameters: {"title"=>"", "chapter"=>"", "publisher"=>"", "date_a"=>"", "date_b"=>""}
+Rendering template within layouts/application
+Rendering say/advanced_search
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/search/Book?title=&publisher=&date_b=&date_a=&chapter=]
+
+
+Processing CourseController#navigate (for 127.0.0.1 at 2011-07-13 23:29:07) [GET]
+Rendering template within layouts/application
+Rendering course/navigate
+Completed in 230ms (View: 7, DB: 0) | 200 OK [http://localhost/course]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:29:10) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/navigateMenu
+Completed in 1262ms (View: 1090, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing CourseController#view (for 127.0.0.1 at 2011-07-13 23:32:26) [GET]
+Rendering template within layouts/application
+Rendering course/view
+Completed in 28ms (View: 21, DB: 0) | 200 OK [http://localhost/course/view]
+
+
+Processing CourseController#view_all (for 127.0.0.1 at 2011-07-13 23:32:29) [GET]
+Rendering template within layouts/application
+Rendering course/view_all
+Completed in 1004ms (View: 744, DB: 0) | 200 OK [http://localhost/course/fullview]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:32:38) [POST]
+  Parameters: {"uri"=>"Select  Curriculum", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:32:39) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/navigateMenu
+Completed in 1530ms (View: 1242, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing CourseController#view_select (for 127.0.0.1 at 2011-07-13 23:32:46) [POST]
+  Parameters: {"authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "id"=>"Course", "_"=>""}
+Rendering course/view_select
+Completed in 217ms (View: 6, DB: 0) | 200 OK [http://localhost/course/view_select]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:32:49) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/course1", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/view_details
+Completed in 305ms (View: 131, DB: 0) | 200 OK [http://localhost/course/view_details]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:35:13) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/topic2", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/view_details
+Completed in 220ms (View: 23, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Ftopic2]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:35:38) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/course1", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/view_details
+Completed in 232ms (View: 49, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fcourse1]
+
+
+Processing CourseController#navigate (for 127.0.0.1 at 2011-07-13 23:35:50) [GET]
+Rendering template within layouts/application
+Rendering course/navigate
+Completed in 500ms (View: 13, DB: 0) | 200 OK [http://localhost/course]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:35:53) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/navigateMenu
+Completed in 1380ms (View: 1185, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:35:58) [GET]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/course45"}
+Rendering course/view_details
+Completed in 356ms (View: 40, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fcourse45]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:36:27) [POST]
+  Parameters: {"uri"=>"Select  Curriculum", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing CourseController#navigate (for 127.0.0.1 at 2011-07-13 23:36:28) [GET]
+Rendering template within layouts/application
+Rendering course/navigate
+Completed in 288ms (View: 19, DB: 0) | 200 OK [http://localhost/course]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:36:30) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/navigateMenu
+Completed in 1366ms (View: 1145, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:36:33) [GET]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/course46"}
+Rendering course/view_details
+Completed in 252ms (View: 33, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fcourse46]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:37:42) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/course2", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/view_details
+Completed in 379ms (View: 69, DB: 0) | 200 OK [http://localhost/course/view_details]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:39:02) [POST]
+  Parameters: {"uri"=>"Select  Curriculum", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:39:03) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/navigateMenu
+Completed in 1435ms (View: 1250, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing CourseController#navigate (for 127.0.0.1 at 2011-07-13 23:39:06) [GET]
+Rendering template within layouts/application
+Rendering course/navigate
+Completed in 333ms (View: 9, DB: 0) | 200 OK [http://localhost/course]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:39:08) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/navigateMenu
+Completed in 1416ms (View: 1209, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing CourseController#navigate (for 127.0.0.1 at 2011-07-13 23:41:44) [GET]
+Rendering template within layouts/application
+Rendering course/navigate
+Completed in 227ms (View: 7, DB: 0) | 200 OK [http://localhost/course]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:41:47) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/navigateMenu
+ERROR: compiling _run_erb_app47views47course47navigateMenu46html46erb RAISED compile error
+/home/dipil/dev/scsh/app/views/course/navigateMenu.html.erb:17: syntax error, unexpected tASSOC, expecting ')'
+...                       :url => {:controller => 'course', :ac...
+                              ^
+Function body:           def _run_erb_app47views47course47navigateMenu46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<html>\n<head>\n"
+
+; @output_buffer.concat(( stylesheet_link_tag 'verticalMenu' ).to_s); @output_buffer.concat "\n</head>\n<body>\n<div id=\"menu4\">\t\t\t\t\t\t\t\n\t\t\t\t\t"
+
+
+
+;  currResource = @courseModel.model.get_resource(params[:uri]) ; @output_buffer.concat "\n\t\t\t\t\t"
+;  semesters = currResource.get_properties(@ioe['hasSem']) ; @output_buffer.concat "\n\t\t\t\t\t"
+;  semesters.each do |semester| ; @output_buffer.concat "\n\t\t\t\t\t\t<li><a href= \"#\">\n\t\t\t\t\t\t\t"
+
+; @output_buffer.concat(( @courseModel.model.object(semester, @ioe['name']).literal.value ).to_s); @output_buffer.concat "</a>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t"
+
+;  semResource = @courseModel.model.get_resource(semester) ; @output_buffer.concat "\n\t\t\t\t\t\t\t\t"
+;  courses = semResource.get_properties(@dcterms['hasPart']) ; @output_buffer.concat "\n\t\t\t\t\t\t\t\t"
+;  courses.each do |course| ; @output_buffer.concat "\n\t\t\t\t\t\t\t\t<li>"
+; @output_buffer.concat(( link_to_remote @courseModel.model.object(course, @ioe['name']).literal.value, :update => 'details'
+                                                :url => {:controller => 'course', :action => 'view_details', :uri => course.uri.to_s} ).to_s); @output_buffer.concat "\n\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t"
+
+
+;  courseResource = @courseModel.model.get_resource(course) ; @output_buffer.concat "\n\t\t\t\t\t\t\t\t\t\t"
+;  topics = courseResource.get_properties(@skos['narrower']) ; @output_buffer.concat "\n\t\t\t\t\t\t\t\t\t\t"
+;  topics.each do |topic| ; @output_buffer.concat "\n\t\t\t\t\t\t\t\t\t\t<li>"
+; @output_buffer.concat(( link_to @courseModel.model.object(topic, @ioe['name']).literal.value,
+                                                :controller => 'say', :action => 'hello',
+												:search => @courseModel.model.object(topic, @ioe['name']).literal.value,
+												:uri => topic.uri.to_s, :courseSearch => true
+                                     		).to_s); @output_buffer.concat "\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t\t\t"
+
+
+;  topicResource = @courseModel.model.get_resource(topic) ; @output_buffer.concat "\n\t\t\t\t\t\t\t\t\t\t\t\t"
+;  subtopics = topicResource.get_properties(@dcterms['hasPart']) ; @output_buffer.concat "\n\t\t\t\t\t\t\t\t\t\t\t\t"
+;  subtopics.each do |subtopic| ; @output_buffer.concat "\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>"
+; @output_buffer.concat(( link_to @courseModel.model.object(subtopic, @ioe['name']).literal.value,
+                                                			:controller => 'say', :action => 'hello',
+															:search => @courseModel.model.object(subtopic, @ioe['name']).literal.value,
+															:uri => subtopic.uri.to_s, :courseSearch => true
+                                     			).to_s); @output_buffer.concat "\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<ul></ul>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t\t\t"
+
+
+;  end ; @output_buffer.concat "\n\t\t\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t"
+
+
+;  end ; @output_buffer.concat "\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t"
+
+
+;  end ; @output_buffer.concat "\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t"
+
+
+;  end ; @output_buffer.concat "\t\t\t\n\t\t\t\t</li>\n\t\t</div>\n  <br/><br/><br/>   \n  <div id = \"details\">\n   </div>\n\t</body>\n\t</html>\n"
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/dipil/dev/scsh/app/views/course/navigateMenu.html.erb:60:in `compile!'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:987:in `render_without_benchmark'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/home/dipil/dev/scsh/app/controllers/course_controller.rb:632:in `navigateMenu'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/home/dipil/dev/scsh/vendor/bundler_gems/ruby/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+./script/server:3:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/home/dipil/dev/scsh/app/views/course/navigateMenu.html.erb:17: syntax error, unexpected tASSOC, expecting ')'
+...                       :url => {:controller => 'course', :ac...
+                              ^) on line #17 of app/views/course/navigateMenu.html.erb:
+14: 								<% courses = semResource.get_properties(@dcterms['hasPart']) %>
+15: 								<% courses.each do |course| %>
+16: 								<li><%= link_to_remote @courseModel.model.object(course, @ioe['name']).literal.value, :update => 'details'
+17:                                                 :url => {:controller => 'course', :action => 'view_details', :uri => course.uri.to_s} %>
+18: 									 
+19: 									<ul>
+20: 										<% courseResource = @courseModel.model.get_resource(course) %>
+
+    app/views/course/navigateMenu.html.erb:60:in `compile!'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:987:in `render_without_benchmark'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+    app/controllers/course_controller.rb:632:in `navigateMenu'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    vendor/bundler_gems/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    vendor/bundler_gems/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    vendor/bundler_gems/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/dipil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    vendor/bundler_gems/ruby/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+
+Rendered rescues/_trace (39.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:42:37) [POST]
+  Parameters: {"uri"=>"Select  Curriculum", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:42:39) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/navigateMenu
+Completed in 1386ms (View: 1153, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:42:42) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/course45", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/view_details
+Completed in 208ms (View: 29, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fcourse45]
+
+
+Processing CourseController#navigate (for 127.0.0.1 at 2011-07-13 23:44:22) [GET]
+Rendering template within layouts/application
+Rendering course/navigate
+Completed in 592ms (View: 12, DB: 0) | 200 OK [http://localhost/course]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:44:25) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/navigateMenu
+Completed in 1461ms (View: 1270, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:44:28) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/course45", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/view_details
+Completed in 260ms (View: 38, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fcourse45]
+
+
+Processing CourseController#navigate (for 127.0.0.1 at 2011-07-13 23:46:28) [GET]
+Rendering template within layouts/application
+Rendering course/navigate
+Completed in 263ms (View: 15, DB: 0) | 200 OK [http://localhost/course]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:46:50) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/navigateMenu
+Completed in 1431ms (View: 1192, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:46:56) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/course45", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/view_details
+Completed in 209ms (View: 25, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fcourse45]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:47:03) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/view_details
+Completed in 443ms (View: 164, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fcurriculum1]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:47:06) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/course47", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/view_details
+Completed in 331ms (View: 141, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fcourse47]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:47:10) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/view_details
+Completed in 381ms (View: 155, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fcurriculum1]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:47:12) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/course29", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/view_details
+Completed in 296ms (View: 32, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fcourse29]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:47:16) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/view_details
+Completed in 362ms (View: 164, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fcurriculum1]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:47:27) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/course2", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/view_details
+Completed in 376ms (View: 68, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fcourse2]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:47:30) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/topic10", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/view_details
+Completed in 206ms (View: 19, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Ftopic10]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:47:32) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/subtopic30", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/view_details
+Completed in 188ms (View: 9, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fsubtopic30]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:47:34) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/topic10", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/view_details
+Completed in 362ms (View: 135, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Ftopic10]
+
+
+Processing CourseController#navigate (for 127.0.0.1 at 2011-07-13 23:48:06) [GET]
+Rendering template within layouts/application
+Rendering course/navigate
+Completed in 280ms (View: 12, DB: 0) | 200 OK [http://localhost/course]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:48:09) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/navigateMenu
+Completed in 1443ms (View: 1252, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:48:12) [POST]
+  Parameters: {"uri"=>"Select  Curriculum", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:48:14) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/navigateMenu
+Completed in 1430ms (View: 1233, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:48:17) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/course45", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/view_details
+Completed in 370ms (View: 43, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fcourse45]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:48:19) [POST]
+  Parameters: {"uri"=>"Select  Curriculum", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:48:23) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/navigateMenu
+Completed in 1415ms (View: 1223, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing CourseController#navigate (for 127.0.0.1 at 2011-07-13 23:49:09) [GET]
+Rendering template within layouts/application
+Rendering course/navigate
+Completed in 343ms (View: 14, DB: 0) | 200 OK [http://localhost/course]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:49:11) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/navigateMenu
+Completed in 1547ms (View: 1339, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:49:14) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/course45", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/view_details
+Completed in 242ms (View: 30, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fcourse45]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:49:17) [POST]
+  Parameters: {"uri"=>"Select  Curriculum", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing CourseController#navigateMenu (for 127.0.0.1 at 2011-07-13 23:49:18) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/curriculum1", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/navigateMenu
+Completed in 1563ms (View: 1375, DB: 0) | 200 OK [http://localhost/course/navigateMenu]
+
+
+Processing CourseController#search (for 127.0.0.1 at 2011-07-13 23:49:28) [GET]
+Rendering template within layouts/application
+Rendering course/search
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/course/search]
+
+
+Processing CourseController#perform_search (for 127.0.0.1 at 2011-07-13 23:49:33) [POST]
+  Parameters: {"commit"=>"Search", "searchtype"=>"simple", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>"", "search"=>"IOE"}
+Rendering course/perform_search
+Completed in 219ms (View: 1, DB: 0) | 200 OK [http://localhost/course/perform_search?searchtype=simple]
+
+
+Processing CourseController#advanced_search (for 127.0.0.1 at 2011-07-13 23:49:35) [POST]
+  Parameters: {"authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/advanced_search
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/course/advanced_search]
+
+
+Processing CourseController#perform_search (for 127.0.0.1 at 2011-07-13 23:49:39) [POST]
+  Parameters: {"option"=>"All", "commit"=>"Search", "hoursLabOperator"=>">", "shortDesc"=>"", "searchtype"=>"advanced", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "hoursLecture"=>"", "hoursTutorial"=>"", "hasSchool"=>"IOE", "objectives"=>"", "publisher"=>"", "hoursTutorialOperator"=>">", "hours"=>"", "_"=>"", "search"=>"", "references"=>"", "hoursLectureOperator"=>">", "hoursLab"=>"", "hoursOperator"=>">"}
+Rendering course/perform_search
+Completed in 244ms (View: 24, DB: 0) | 200 OK [http://localhost/course/perform_search?searchtype=advanced]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:49:44) [GET]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/course1", "navigation"=>"true"}
+Rendering template within layouts/application
+Rendering course/view_details
+Completed in 449ms (View: 85, DB: 0) | 200 OK [http://localhost/course/view_details?navigation=true&uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Fcourse1]
+
+
+Processing CourseController#view_details (for 127.0.0.1 at 2011-07-13 23:49:47) [POST]
+  Parameters: {"uri"=>"http://www.ioe.edu.np/scsh/course/topic2", "authenticity_token"=>"VazTnjxxDe7ghatLaxLRmIRt3z7drxYAiHhxB1QKUOY=", "_"=>""}
+Rendering course/view_details
+Completed in 225ms (View: 20, DB: 0) | 200 OK [http://localhost/course/view_details?uri=http%3A%2F%2Fwww.ioe.edu.np%2Fscsh%2Fcourse%2Ftopic2]
+
+
+Processing CourseController#view (for 127.0.0.1 at 2011-07-13 23:50:03) [GET]
+Rendering template within layouts/application
+Rendering course/view
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/course/view]
+
+
+Processing CourseController#navigate (for 127.0.0.1 at 2011-07-13 23:50:04) [GET]
+Rendering template within layouts/application
+Rendering course/navigate
+Completed in 236ms (View: 7, DB: 0) | 200 OK [http://localhost/course]
+
+
+Processing CourseController#view (for 127.0.0.1 at 2011-07-13 23:50:07) [GET]
+Rendering template within layouts/application
+Rendering course/view
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/course/view]
+
+
+Processing CourseController#navigate (for 127.0.0.1 at 2011-07-13 23:50:08) [GET]
+Rendering template within layouts/application
+Rendering course/navigate
+Completed in 300ms (View: 8, DB: 0) | 200 OK [http://localhost/course]
+
+
+Processing CourseController#search (for 127.0.0.1 at 2011-07-13 23:50:12) [GET]
+Rendering template within layouts/application
+Rendering course/search
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/course/search]
+
+
+Processing CourseController#navigate (for 127.0.0.1 at 2011-07-13 23:50:14) [GET]
+Rendering template within layouts/application
+Rendering course/navigate
+Completed in 236ms (View: 8, DB: 0) | 200 OK [http://localhost/course]

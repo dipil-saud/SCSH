@@ -1,0 +1,57 @@
+<table>
+
+
+<% if params[:option] == "All" %>
+<tr>
+<table>
+<tr><td>Course Objectives</td><td><%= text_field_tag :objectives %></td></tr>
+<tr><td>Course References</td><td><%= text_field_tag :references %></td></tr>
+<tr><td>Lecture Hrs<%= select_tag  "hoursLectureOperator", "<option>&gt</option><option>&lt</option>" %></td><td><%= text_field_tag "hoursLecture", '', :size => 3 %></td></tr>
+<tr><td>Tutorial Hrs<%= select_tag  "hoursTutorialOperator", "<option>&gt</option><option>&lt</option>" %></td><td><%= text_field_tag "hoursTutorial", '', :size => 3 %></td></tr>
+<tr><td>Lab Hrs<%= select_tag  "hoursLabOperator", "<option>&gt</option><option>&lt</option>" %></td><td><%= text_field_tag "hoursLab", '', :size => 3 %></td></tr>
+<tr><td>Course Taught At</td><td><%= text_field_tag :hasSchool %></td></tr>
+<tr><td>Published By</td><td><%= text_field_tag :publisher %></td></tr>
+<tr><!-- start topics --><td>
+Topic Total Hrs<%= select_tag  "hoursOperator", "<option>&gt</option><option>&lt</option>" %></td><td><%= text_field_tag "hours", '', :size => 3 %>
+</td></tr>
+<tr><!-- start subtopics --><td>
+Subtopic Description</td> <td><%= text_field_tag :shortDesc %></td>
+</tr>
+</table>
+</tr>	
+<% elsif params[:option] == "Course" %>
+<th>Course</th>
+<tr>
+<td>
+<table>
+<tr><td>Course Objectives</td><td><%= text_field_tag :objectives %></td></tr>
+<tr><td>Course References</td><td><%= text_field_tag :references %></td></tr>
+<tr><td>Lecture Hrs<%= select_tag  "hoursLectureOperator", "<option>&gt</option><option>&lt</option>" %></td><td><%= text_field_tag "hoursLecture", '', :size => 3 %></td></tr>
+<tr><td>Tutorial Hrs<%= select_tag  "hoursTutorialOperator", "<option>&gt</option><option>&lt</option>" %></td><td><%= text_field_tag "hoursTutorial", '', :size => 3 %></td></tr>
+<tr><td>Lab Hrs<%= select_tag  "hoursLabOperator", "<option>&gt</option><option>&lt</option>" %></td><td><%= text_field_tag "hoursLab", '', :size => 3 %></td></tr>
+<tr><td>Course Taught At</td><td><%= text_field_tag :hasSchool %></td></tr>
+<tr><td>Published By</td><td><%= text_field_tag :publisher %></td></tr>
+</table>
+</td>
+</tr>
+<% elsif params[:option] == "Topic" %>
+<th>Topic</th>
+<tr>
+<td><!-- start topics -->
+Total Hrs<%= select_tag  "hoursOperator", "<option>&gt</option><option>&lt</option>" %></td><td><%= text_field_tag "hours", '', :size => 3 %>
+</td>
+</tr>
+
+<% elsif params[:option] == "Subtopic" %>
+<th>Subtopic</th>
+<tr>
+<td><!-- start subtopics -->
+Subtopic Description <%= text_field_tag :shortDesc %>
+</td>
+</tr>
+
+<% end %>
+
+</table>
+
+

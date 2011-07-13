@@ -1,0 +1,16 @@
+<div class ='tabbed_box'>
+	<h4><strong>Results</strong></h4>
+<div class ='tabbed_area'>
+	
+
+<div class = 'content' >
+	<ul>
+		<% k= 0 %>
+		<% @titles.each do |title|%>
+		<li><%= link_to title, :action => 'view_details' , :uri => @uris[k], :navigation => true %></li>	
+		<% k = k+1 %>
+		<% end %>
+	</ul>
+</div>	
+</div>	
+</div>

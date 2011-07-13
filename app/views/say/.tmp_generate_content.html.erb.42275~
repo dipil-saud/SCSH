@@ -1,0 +1,27 @@
+<%= javascript_include_tag :defaults %>
+
+<% if @title.length > 0 %>
+			<ul>
+			<% for k in 0..@title.length-1 %> 
+		    <li><%= @title[k] %>
+			    <%= link_to_remote "Details",
+                :update => 'resource',
+    			:url    => { :controller => 'resource_manager' , :action => 'new_resource' , :uri => @uri[k] , :type => params[:type]} %>	
+			</li>				
+			<% end %>
+			</ul>
+			<% end %>
+			
+	<% if @uri1.length > 0 %>
+			<ul>
+				
+			<% for k in 0..@uri1.length-1 %> 
+			<%= puts @uri1[k] %>
+		    <li><%= @uri1[k].sub("http://dbpedia.org/resource/","")  %>
+			    <%= link_to_remote "Details",
+                :update => 'resource',
+    			:url    => { :controller => 'resource_manager' , :action => 'new_resource' , :uri => @uri1[k] , :type => "Fact"} %>	
+			</li>				
+			<% end %>
+			</ul>
+			<% end %>

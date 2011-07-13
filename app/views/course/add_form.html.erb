@@ -1,0 +1,11 @@
+<% if @flag == 0 %>
+			<% form_tag({:action => 'add_operation', :subject => params[:uri], :predicate => params[:type], :objtype => "Literal" }) do%>
+	    	<%= text_field_tag :value %>
+			<%= submit_tag 'Add' %>  
+			<% end -%>
+<% else %>
+		<% form_tag({:action => 'add_operation', :subject => params[:uri], :predicate => params[:type], :objtype => "Resource" } ) do%>
+    	<%= select_tag :value, options_for_select([""]) +options_for_select(@uris.collect{ |u| [@names[@uris.index(u)] , u] })%>
+		<%= submit_tag 'Add' %>   
+		<% end -%>
+<% end %>

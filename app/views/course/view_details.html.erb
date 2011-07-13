@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<%= stylesheet_link_tag "table" %>  
+	</head>
+	<body>
+		<div id = 'details' >
+			<table id="box-table-a">
+			<thead><th><%= @courseModel.model.object(@subject,@ioe['name']).literal.value %></th><th></th></thead>	
+			<tbody>	
+			<% @predicates.each { |predicate| %>
+			<tr>
+			  <td><% predicateNode = Redland::Node.new(Redland::Uri.new(predicate)) -%>
+				 <%= @nameModel.model.object( predicateNode, @ioe['label']).literal.value + "  :  " %></h3>
+			  </td>
+			  <td>	
+					<% @subject.get_properties(predicateNode) do |object| %>	  
+					   <% if object.node_type == 'NODE_TYPE_RESOURCE' -%>
+					       <% typeNode = @courseModel.model.object( object, @rdf['type'])%> 
+						   <% nameNode = @courseModel.model.object( object, @ioe['name'])%>
+						   <% if nameNode %>	   	  
+						     	<% if typeNode == @ioe['Semester'] && predicateNode == @ioe['hasSem']%>
+									   <%= nameNode.literal.value %><%= ": "%>
+									   <% sem = @courseModel.model.get_resource(object.uri.to_s) %>
+									   <% sem.get_properties(@dcterms['hasPart']).each do |course| %>
+									   <% courseNode = @courseModel.model.object( course, @ioe['name'])%>
+									   <%= link_to_remote courseNode.literal.value, 
+	                                       :update => 'details', 
+	                                       :url => { :controller => "course", :action => "view_details", :uri =>course.uri.to_s }  %>
+								       &nbsp;&nbsp;<% end -%>
+								<% elsif typeNode == @ioe['Semester'] && predicateNode == @dcterms['isPartOf']%>
+									
+									<% sem = @courseModel.model.get_resource(object.uri.to_s) %>
+									<% curr = sem.object_of_predicate(@ioe['hasSem']) %>
+									<% currNode = @courseModel.model.object( curr[0], @ioe['name']) %>
+									<%= link_to_remote currNode.literal.value, 
+	                                       :update => 'details', 
+	                                       :url => { :controller => "course", :action => "view_details", :uri =>curr[0].uri.to_s }  %>
+										   &nbsp;&nbsp;&nbsp;<%= nameNode.literal.value %><br/>
+							    <% else%>
+									<% nameNode.literal.value %>
+							  		<%= link_to_remote nameNode.literal.value, 
+                                       :update => 'details', 
+                                       :url => { :controller => "course", :action => "view_details", :uri =>object.uri.to_s }  %>								
+								<% end -%>
+						   <% else -%>
+						      <%= @nameModel.model.object( object, @ioe['label'])%>
+						   <% end -%>
+					  
+					   <% else %>
+					   		<%= object.literal.value %>
+					   <% end %>
+					   <br/>
+					<% end %>
+				
+			  </td>	
+			</tr>
+			
+			<% } -%>
+			</tbody>
+			</table>	
+				
+		</div>
+	</body>
+</html>

@@ -1,0 +1,73 @@
+<% if @newresource.title.length > 0 %>
+    Title:<% @newresource.title.each { |t| -%>
+		<% t= t.sub("@en","") %>
+		<%= t %><br/>
+		<% } -%>
+		<br/><% end -%>
+		
+		<% if @newresource.part_of.length > 0 %>
+		Is part of: <% @newresource.part_of.each { |t| -%>
+		<a href= "<%= t %>"><%= t %></a><br/>
+		<% } -%>
+		<br/>
+		<% end -%>
+		<% if @newresource.contains_topics.length > 0 %>
+		contains topics: <% @newresource.contains_topics.each { |t| -%>
+		<!--<% t = t.sub("http://dbpedia.org/resource/Category:","") %>-->
+		<a href= "<%= t %>"><%= t %></a><br/>
+		<% } -%>
+		<br/>
+		<% end -%>
+		
+		<% if @newresource.contains_subjects.length > 0 %>
+		Has subjects: <% @newresource.contains_subjects.each { |t| -%>
+		<a href= "<%= t %>"><%= t %></a><br/>
+		<% } -%>
+		<br/>
+		<% end -%>
+		<% if @newresource.label.length > 0 %>
+		Label: <% @newresource.label.each { |t| -%>
+		<% t= t.sub("@en","") %>
+		<%= t %><br/>
+		<% } -%>
+		<br/>
+		<% end -%>
+		<% if @newresource.abstract.length > 0 %>
+		Abstract: <% @newresource.abstract.each { |t| -%>
+		<% t= t.sub("@en","") %><%= t %><br/>
+		<% } -%>
+		<br/>
+		<% end -%>
+		<% if @newresource.wikipage.length > 0 %>
+		wikipage: <a href="<%= @newresource.wikipage %>"><%= @newresource.wikipage %></a>
+		<br/>
+		<% end -%>
+		<% if @newresource.people_associated.length > 0 %>
+		people_associated: <% @newresource.people_associated.each { |t| -%>
+		 <a href="<%= t %>"><%= t %></a><br/>
+		<% } -%>
+		<br/>
+		<% end -%>	
+		<% if @newresource.photo.length > 0 %>
+		Photos: <a href="<%= @newresource.photo %>"><%= @newresource.photo -%></a>
+		<br/>
+		<% end -%>	
+<% if @newresource.subject_category.length > 0 %>
+		subject_category: <% @newresource.subject_category.each { |t| -%>
+		 <a href="<%= t %>"><%= t %></a><br/>
+		<% } -%>
+		<br/>
+		<% end -%>	
+		<% if @newresource.same_as.length > 0 %>
+		same_as: <% @newresource.same_as.each { |t| -%>
+		 <a href="<%= t %>"><%= t %></a><br/>
+		<% } -%>
+		<br/>
+		<% end -%>
+			<% if @newresource.references.length > 0 %>
+		references: <% @newresource.references.each { |t| -%>
+		 <a href="<%= t %>"><%= t %></a><br/>
+		<% } -%>
+		<br/>
+		<% end -%>
+		

@@ -1,0 +1,9 @@
+    <% if flash[:message] %><div><%= flash[:message] %></div><% end %>
+  <% if flash[:error] %><div><%= flash[:error] %></div><% end %> 
+
+
+  <% form_tag({ :action => "process_login"} , :method => "get" ) do%>
+					Username: <%= text_field_tag :user, params[:user] %>
+					Password: <%= password_field_tag :pass, params[:pass] %>
+					<%= submit_tag "Search", :name => nil %>
+					<% end %>

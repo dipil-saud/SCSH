@@ -1,0 +1,1 @@
+Topic &nbsp;&nbsp;<%= select_tag  "isPartOf"+num.to_s, options_for_select(@topics.collect{ |u| [@topicnames[@topics.index(u)] , u ] }) %>

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Search Course</title>
+		<%= javascript_include_tag :defaults %>
+		
+	</head>
+	<body>
+		
+		<div id = "search">
+		<% form_remote_tag :update => "Results", 
+                           :url => {:action =>"perform_search", :searchtype =>"simple"} do %>
+		<h3>Simple Search</h3> 
+		<%= text_field_tag :search %>
+		<%= submit_tag 'Search' %>
+		<% end %>
+		
+		
+		<%= link_to_remote "Advanced Search", {:update => "search", :url => { :action => "advanced_search" }}, {:class => 'white'} %><br/>
+		
+		
+		</div>
+		<% if !params[:home]%>
+		<div id = "Results" ></div>
+		<% end %>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<%= javascript_include_tag :defaults %><%= stylesheet_link_tag 'style2' %>
+		<title>Add Topic</title>
+	</head>
+	<body>
+		<h2> Enter Course Data</h2>
+		<% form_for :topicmodel, @course, :url => { :action => 'create_topic', :no=>@no} do |f| %>
+					<p>	    
+					    <%= f.text_field  :name,
+									      :style => "color:#aaa;",
+									      :value => "Topic Name",
+									      :onfocus => "if(this.getValue()=='Topic Name'){this.clear();this.style.color = '#000';}",
+									      :onblur => "if(this.getValue()==''){this.setValue('Topic Name');this.style.color = '#aaa';}" %>
+
+				    </p>
+					
+					<% 1.upto(@no) do |num| -%>
+					
+					<p>	    
+					    <%= label_tag "broader#{num}", "Select Course" %>
+						<%= f.select  "broader#{num}", options_for_select(@courses.collect{ |u| [@coursenames[@courses.index(u)] , u ] }) %>
+      			    </p>				
+					
+					<% end -%>
+					
+					
+					<% @no = @no+1 -%>
+					<%= link_to "Add Course",:action => 'new_topic' , :no => @no %>
+					<p>
+					<%= f.submit 'Add' %>
+				    </p>
+					
+					 
+				<% end %>			
+				
+	</body>
+</html>

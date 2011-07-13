@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<%= javascript_include_tag :defaults %>
+		
+	</head>
+	<body>
+		
+		
+		<h2> <%= @courseModel.model.object(@subject,@ioe['name']).literal.value %></h2>
+		
+			<table>
+			<% @predicates.each { |predicate| %>
+			<tr>
+			  <td><% predicateNode = Redland::Node.new(Redland::Uri.new(predicate)) -%>
+				<h3> <% pred_name = @nameModel.model.object( predicateNode, @ioe['label']).literal.value -%>
+				     <%= pred_name+ " : " %>
+				</h3>
+			  </td>
+			  	<td>
+				<h4>
+					<table cellpadding= "10" ><% n = 1 -%>
+					<% @subject.get_properties(predicateNode) do |object| %>
+					   	   <tr>
+					   	   <% if object.node_type == 'NODE_TYPE_RESOURCE' -%>
+						   <% typeNode = @courseModel.model.object( object, @rdf['type'])%> 
+						   <% nameNode = @courseModel.model.object( object, @ioe['name'])%>
+						   <% if nameNode %>
+						   	  <td><%= nameNode.literal.value %></td> <!-- name of the resource, i.e instead of uri display the name -->					  
+							      <td><div id =  "<%= predicate+'object'+n.to_s %>">
+								  <%= button_to_remote "Edit",
+                                                       :update => predicate+'object'+n.to_s,
+                                                       :url => { :action => "update_form", :subject => @courseModel.uri, :predicate => predicateNode.uri.to_s, :object => object.uri.to_s, :objtype => object.node_type, :type => pred_name }
+			                             %>
+							   </div><% n= n+1 -%></td>
+							   <% elsif typeNode %>
+						        <% puts typeNode %>
+								<% puts predicateNode %>
+								<% puts "" %> 
+						   		<% if typeNode == @ioe['Semester'] && predicateNode == @ioe['hasSem']%>
+									   <% sem = @courseModel.model.get_resource(object.uri.to_s) %>
+									   <% sem.get_properties(@dcterms['hasPart']).each do |course| %>
+									   <% courseNode = @courseModel.model.object( course, @ioe['name'])%>
+									   <%= link_to_remote courseNode.literal.value, 
+	                                       :update => 'details', 
+	                                       :url => { :controller => "course", :action => "view_details", :uri =>course.uri.to_s }  %>
+										   <br/>
+									   <% end -%>
+								<% elsif typeNode == @ioe['Semester'] && predicateNode == @dcterms['isPartOf']%>
+									<% sem = @courseModel.model.get_resource(object.uri.to_s) %>
+									<% puts sem %>
+									<% curr = sem.object_of_predicate(@ioe['hasSem']) %>
+									<% puts curr %>
+									<% currNode = @courseModel.model.object( curr[0], @ioe['name']) %>
+									   <%= link_to_remote currNode.literal.value, 
+	                                       :update => 'details', 
+	                                       :url => { :controller => "course", :action => "view_details", :uri =>curr[0].uri.to_s }  %>
+										   <br/>								
+								<% end -%>		  
+							  <% else -%>
+						      <td><%= @nameModel.model.object( object, @ioe['label'])%></td>
+						   <% end -%><!-- end object type resource -->
+					  <% else %>
+					   		<td><%= object.literal.value %></td>
+							<td><div id =  "<%= predicate+'object'+n.to_s %>">
+								<%= button_to_remote "Edit",
+                                                       :update => predicate+'object'+n.to_s,
+                                                       :url => { :action => "update_form", :subject => @courseModel.uri, :predicate => predicateNode.uri.to_s, :object => object.literal.value, :objtype => object.node_type } 
+                                %>
+							    </div><% n= n+1 -%>
+						   </td>
+					  <% end %></tr><!-- end of type literal -->
+					   <br/>
+					<% end %><!-- end of objects for each predicate -->
+					</table>
+				</h4>
+			     </td>
+			</tr>
+			
+			<% } -%>
+			
+		    <br/><br/>
+			<tr>
+				<td><%= button_to_remote "Add Property",
+                                 :update => "add",
+                                 :url => { :action => "add", :uri => @courseModel.uri } 
+                                %></td>
+			<td><div id = "add"></div></td>
+			</tr>
+			
+			</table>
+			<br/>
+			<%= button_to "Delete Resource", :action => "delete", :uri =>@courseModel.uri %>
+						   	  
+			
+		
+	</body>
+</html>

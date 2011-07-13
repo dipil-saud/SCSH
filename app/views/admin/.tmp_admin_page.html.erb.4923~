@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<%= javascript_include_tag :defaults %>
+		<%= stylesheet_link_tag 'style2' %>  
+		<title>Admin Page</title>
+	</head>
+	<body>
+		<%= link_to "View", :controller => "course", :action => "view" %>		
+		<%= link_to_remote "Add",
+                :update => 'updatediv',
+    			:url    => { :controller => 'course' , :action => 'new_select'} %>
+		<%= link_to "Update", :controller => "admin", :action => "admin_update" %>
+		<br/>
+		<br/>
+		<div id = "updatediv">
+			
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>View Course</title>
+		<%= stylesheet_link_tag 'Syllabus' %>
+	</head>
+	<body>
+
+<div class="leftCol"></div>	<div id="subnav-col"> 
+		 
+		
+  			<% @curriculum_uris.each do |curr_uri| %>
+			
+				<h2><a href="#"><%= @curriculum_names[@curriculum_uris.index(curr_uri)] %></a></h2>
+				<ol>							
+					<% currResource = @courseModel.model.get_resource(curr_uri) %>
+					<% semesters = currResource.get_properties(@ioe['hasSem']) %>
+					<% semesters.each do |semester| %>
+						<li>
+							<%= @courseModel.model.object(semester, @ioe['name']).literal.value %>
+							<ol>
+								<% semResource = @courseModel.model.get_resource(semester) %>
+								<% courses = semResource.get_properties(@dcterms['hasPart']) %>
+								<% courses.each do |course| %>
+								<li>
+									<%= @courseModel.model.object(course, @ioe['name']).literal.value %>
+									<ol>
+										<% courseResource = @courseModel.model.get_resource(course) %>
+										<% topics = courseResource.get_properties(@skos['narrower']) %>
+										<% topics.each do |topic| %>
+										<li>
+											<%= @courseModel.model.object(topic, @ioe['name']).literal.value %>
+											<ol>
+												<% topicResource = @courseModel.model.get_resource(topic) %>
+												<% subtopics = topicResource.get_properties(@dcterms['hasPart']) %>
+												<% subtopics.each do |subtopic| %>
+													<li>
+														<%= @courseModel.model.object(subtopic, @ioe['name']).literal.value %>
+													</li>
+												<% end %>
+											</ol>
+										</li>
+										<% end %>
+									</ol>
+								</li>
+								<% end %>
+							</ol>
+						</li>
+					<% end %>						
+				</ol>
+			
+			<%end%>
+		</div>
+
+	
+	</body>
+</html>

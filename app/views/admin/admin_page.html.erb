@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<%= javascript_include_tag :defaults %>
+		<%= stylesheet_link_tag 'button' %>
+		
+		<title>Admin Page</title>
+	</head>
+	<body>
+		
+		<table>
+			<tr>
+		<td width= '250px'><h4>Administrator Select</h4></td>		
+		<td> &nbsp;&nbsp;<%= link_to "&nbsp;&nbsp;View&nbsp;&nbsp;", {:controller => "course", :action => "view" , :option => "view"}, { :class => "large awesome" } %> &nbsp;&nbsp;</td>
+		<td>&nbsp;&nbsp; <%= link_to "&nbsp;&nbsp;Add&nbsp;&nbsp;",{ :controller => 'course' , :action => 'new_select'}, { :class => "large awesome" } %>&nbsp;&nbsp;</td>
+		<td> &nbsp;&nbsp;<%= link_to  "&nbsp;Update&nbsp;", {:controller => "course", :action => "view" , :option => "update"},  { :class => "large awesome" } %>&nbsp;&nbsp;</td>
+		</tr></table>
+		
+	</body>
+</html>

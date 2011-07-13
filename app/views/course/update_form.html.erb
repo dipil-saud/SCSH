@@ -1,0 +1,12 @@
+        <% if params[:type] == nil %>
+			<% form_tag({:action => 'update_data', :subject => params[:subject], :predicate => params[:predicate], :object => params[:object], :objtype => params[:objtype] }) do%>
+	    	<%= text_field_tag :value %>
+			<%= submit_tag 'Update' %>  
+			<% end -%>
+	    <% else %>
+		<% form_tag({:action => 'update_data', :subject => params[:subject], :predicate => params[:predicate], :object => params[:object], :objtype => params[:objtype]} ) do%>
+    	<%= select_tag :value, options_for_select([""]) +options_for_select(@uris.collect{ |u| [@names[@uris.index(u)] , u] })%>
+		<%= submit_tag 'Update' %>   
+		<% end -%>
+		<% end %>
+			

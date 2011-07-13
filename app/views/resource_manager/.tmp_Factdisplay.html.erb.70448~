@@ -1,0 +1,86 @@
+<% if @newresource.title.length > 0 %>
+    Facts_About  :<% @newresource.title.each { |t| -%>
+		<% t= t.sub("@en","") %>
+		<%= t %><br/>
+		<% } -%>
+		<br/><% end -%>
+		
+		<% if @newresource.part_of.length > 0 %>
+Is Part Of : <% @newresource.part_of.each { |t| -%>
+		<a href= "<%= t %>"><%= t.sub("http://dbpedia.org/resource/","") %></a><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<% } -%>
+		<br/>
+		<% end -%>
+		<% if @newresource.contains_topics.length > 0 %>
+Contains Topics  : <% @newresource.contains_topics.each { |t| -%>
+		<%# t = t.sub("http://dbpedia.org/resource/Category:","") %>
+		<a href= "<%= t %>"><%= t.sub("http://dbpedia.org/resource/","") %></a><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<% } -%>
+		<br/>
+		<% end -%>
+		
+		<% if @newresource.contains_subjects.length > 0 %>
+Has Subjects  : <% @newresource.contains_subjects.each { |t| -%>
+		<a href= "<%= t %>"><%= t.sub("http://dbpedia.org/resource/","") %></a><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<% } -%>
+		<br/>
+		<% end -%>
+		<% if @newresource.label.length > 0 && @newresource.title.length == 0 %>
+Facts_About  : <% @newresource.label.each { |t| -%>
+		<% t= t.sub("@en","") %>
+		<%= t %><br/>
+		<% } -%>
+		<br/>
+		<% end -%>
+		<% if @newresource.abstract.length > 0 %>
+Abstract  : <% @newresource.abstract.each { |t| -%>
+		<% t= t.sub("@en","") %><%= t %><br/>
+		<% } -%>
+		<br/>
+		<% end -%>
+		<% if @newresource.wikipage.length > 0 %>
+		
+Wikipage  : <a href="<%= @newresource.wikipage %>"><%= @newresource.wikipage %></a>
+		<br/><br/>
+		<% end -%>
+		<% if @newresource.comment.length > 0 %>
+Comments   : <% @newresource.comment.each { |t| -%>
+		<% t= t.sub("@en","") %><%= t %><br/>
+		<% } -%>
+		<br/>
+		<% end -%>
+		<% if @newresource.thumbnail.length > 0 %>
+ <img src="<%= @newresource.thumbnail %>" /> <a href="<%= @newresource.photo %>">view full image</a><br/>
+  
+			<% end -%>	<br/><br/>
+		
+		<% if @newresource.photo.length > 0 %>
+Related_Photos  : <a href="<%= @newresource.photo %>"><%= @newresource.photo -%></a>
+		<br/><br/>
+		<% end -%>	
+		<% if @newresource.subject_category.length > 0 %>
+Broader_Concepts  : <% @newresource.subject_category.each { |t| -%>
+		 <a href="<%= t %>"><%= t.sub("http://dbpedia.org/resource/","") %></a><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<% } -%>
+		<br/>
+		<% end -%>	
+		<br/><br/>
+		<% if @newresource.references.length > 0 %>
+References  : <% @newresource.references.each { |t| -%>
+		 <a href="<%= t %>"><%= t %></a><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<% } -%>
+		<br/>
+		<% end -%>
+		<% if @newresource.same_as.length > 0 %>
+Same_As  : <% @newresource.same_as.each { |t| -%>
+		 <a href="<%= t %>"><%= t %></a><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<% } -%>
+		<br/>
+		<% end -%>
+		<% if @newresource.people_associated.length > 0 %>
+People_Associated  : <% @newresource.people_associated.each { |t| -%>
+		 <a href="<%= t %>"><%= t.sub("http://dbpedia.org/resource/","") %></a><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<% } -%>
+		<br/>
+		<% end -%>		
+		

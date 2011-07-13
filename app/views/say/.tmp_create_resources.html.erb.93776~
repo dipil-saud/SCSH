@@ -1,0 +1,29 @@
+Title: <% @title.each { |t| -%>
+       <%= t %> <br/>
+	   <% } -%>
+<br/><br/> 
+Source: <a href="<%= @uri %>"> <%= @uri %> </a>
+<br/><br/> 
+Issued: <% @issued.each { |t| -%>
+       <%= t %> <br/>
+	   <% } -%>
+<br/><br/>	     
+ISBN: <% @isbn.each { |t| -%>
+       <%= t %> <br/>
+	   <% } -%>
+<br/><br/>
+Cover: <img src="<%= @imageLink %>" /> 
+
+<br/><br/>
+See Also: <% @seeAlso.each { |t| -%>
+       <a href="<%= t %>"><%= t %></a> <br/>
+	   <% } -%>
+<br/><br/>
+CHAPTERS: <br/> <% k=0 -%>
+            <% while k < @chapters.length do -%>
+       <a href="<%= @chapters_uri[k] %>"> <%= @chapters[k] %> </a> <%= "  ( "%> <%= @pages[k] %> <%= " )"%> <br/>
+	   <% k= k+1 -%>
+	   <% end -%>
+<br/><br/>
+
+

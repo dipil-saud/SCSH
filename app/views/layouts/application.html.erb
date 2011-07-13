@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		        
+				<%= stylesheet_link_tag 'style' %>
+				<%= javascript_include_tag :defaults %>	
+				<%= javascript_include_tag "jquery-latest" %> 
+				<%= javascript_include_tag "navigation" %>
+				<%= stylesheet_link_tag 'button' %>
+				
+			
+				
+		
+	</head>
+	<body>
+		<div id="sitewrp">
+
+<div class ="container">
+<img src="/images/headerFinal.png" width="980" height="155" alt="Semantic Course Study helper" />
+
+<div id="header">
+	   
+		<%= navigation :primary %>							
+	
+</div>
+</div>
+<div class="mainContainer">
+<%= yield %>
+</div>
+</div>
+	</body>
+</html>

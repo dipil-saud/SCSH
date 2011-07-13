@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<%= javascript_include_tag :defaults %>
+		<%= stylesheet_link_tag 'button' %>
+	</head>
+	<body>
+		<h4> Select Type </h4>
+		<% form_tag({ :controller => "course", :action => "process_select"} , :method => "get" ) do%>
+					<%= label_tag :id, "Select To Create" %>
+					<%= select_tag(:id, options_for_select([""])+options_for_select(@select_array.collect{ |u| [u.to_s, u.to_s] }), options = {:onchange => "this.form.submit();"} ) %>
+					<!-- <%= submit_tag "Select", :name => nil %> -->
+					<% end %>
+		
+
+	</body>
+</html>

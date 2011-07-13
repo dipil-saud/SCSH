@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Search Course</title>
+		<%= javascript_include_tag :defaults %>
+		<%= stylesheet_link_tag 'style' %>
+	</head>
+	<body>
+		<% if !params[:home]%>
+		<div id="navig">
+	
+
+<%= navigation :primary %>
+</div>
+<br/>
+<br/>
+<% end %>
+		<div id = "search">
+		<% form_remote_tag :update => "Results", 
+                           :url => {:action =>"perform_search", :searchtype =>"simple"} do %>
+		<h3>Simple Search</h3> 
+		<%= text_field_tag :search %>
+		<%= submit_tag 'Search' %>
+		<% end %>
+		
+		<span class = 'class1'>
+		<%= link_to_remote "Advanced Search", :update => "search", :url => { :action => "advanced_search" } %>
+		</span>
+		</div>
+		<% if !params[:home]%>
+		<div id = "Results" ></div>
+		<% end %>
+	</body>
+</html>

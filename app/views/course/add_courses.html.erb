@@ -1,0 +1,16 @@
+Add Course: <br/>
+			<% @choices = Array.new(1)  %>
+			<ul>
+			<% @choices.each do |choice| %>
+			<li>
+			Course &nbsp;<%= select_tag  "course_uri[]", options_for_select(@courses.collect{ |u| [@coursenames[@courses.index(u)] , u ] }) %>&nbsp;&nbsp;&nbsp;
+			Semester&nbsp;<%= select_tag  "semester_no[]", options_for_select(@semesters.collect{ |u| [ u, u ] }) %>
+			&nbsp;&nbsp;<%= button_to_function 'Add Another', 'var 
+			c=this.parentNode;c.parentNode.insertBefore(c.cloneNode(true),c)' %>
+			<br/>
+			</li>
+			
+			<% end %>			
+			</ul>
+			<br/><br/>
+			<%= submit_tag "Add" %>

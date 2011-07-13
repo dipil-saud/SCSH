@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<%= javascript_include_tag :defaults %><%= stylesheet_link_tag "style2" %>
+	</head>
+	<body>
+		<% form_tag(:url => {:action => 'view_details'}) do%>
+    	<%= select_tag :uri, options_for_select(["Select  "+@select]) +options_for_select(@uris.collect{ |u| [@names[@uris.index(u)] , u] }), 					  
+					   options = { :onChange => remote_function(:update => 'details', :url => {:action => 'view_details'}, :with => "'uri=' + this.value") }  %>
+		<!-- <%= submit_tag 'Select' %> -->  
+		<% end -%>
+		<br/>
+		<div id="details">
+			
+		</div>
+	</body>
+</html>

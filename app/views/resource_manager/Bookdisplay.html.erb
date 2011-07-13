@@ -1,0 +1,32 @@
+BookTitle: <% @newresource.title.each { |t| -%>
+       <%= t %> <br/>
+	   <% } -%>
+<br/><br/> 
+Source: <a href="<%= @uri %>"> <%= @newresource.uri %> </a>
+<br/><br/> 
+Publisher:  <%= @newresource.publisher %> </a>
+<br/><br/> 
+Issued: <% @newresource.issued.each { |t| -%>
+       <%= t %> <br/>
+	   <% } -%>
+<br/><br/>	     
+ISBN: <% @newresource.isbn.each { |t| -%>
+       <%= t %> <br/>
+	   <% } -%>
+<br/><br/>
+Cover: <img src="<%= @newresource.cover_image %>" /> 
+
+<br/><br/>
+See Also: <% @newresource.actual_link.each { |t| -%>
+       <a href="<%= t %>"><%= t %></a> <br/>
+	   <% } -%>
+<br/><br/>
+CHAPTERS: <br/> <% k=0 -%>
+			<% chapters, pages = @newresource.chapters -%>
+            <% while k < chapters.length do -%>			
+        <%= chapters[k] %> </a> <%= "  ( "%> <%= pages[k] %> <%= " )"%> <br/>
+	   <% k= k+1 -%>
+	   <% end -%>
+<br/><br/>
+
+

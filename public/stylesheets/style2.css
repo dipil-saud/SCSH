@@ -1,0 +1,45 @@
+
+body {   
+   background-image:url(../images/background_course2.jpg); 
+   background-repeat:no-repeat;
+   background-repeat: repeat-y;
+     
+   background-position:top left;   
+   background-attachment:fixed;
+   /*background-color:#657077;*/
+   background-color:#eeeeee;   
+   
+   max-width: 800px;
+   min-width: 720px;
+   margin:40px 40px 35px 150px;
+}  
+
+
+ h2 {   
+  font-family:Arial, Helvetica, sans-serif;   
+  font-size:23px;   
+  color:#657077;   
+  letter-spacing:-1px;   
+  margin-bottom:10px;   
+}   
+
+h3 {   
+  font-family:Arial, Helvetica, sans-serif;   
+  font-size:15px;   
+  color:#657077;   
+  letter-spacing: 0px;   
+  margin-bottom:10px;   
+}   
+
+h4 {
+	font-size:12px;   
+    /*color:#657077;   
+    letter-spacing: 0px;*/ 
+}
+
+
+
+
+
+
+

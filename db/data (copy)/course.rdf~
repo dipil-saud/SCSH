@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xml:base="file:///home/dipil/Aptana%20RadRails%20Workspace/rails/db/data/course.rdf">
+  <rdf:Description rdf:about="http://www.faa.gov/DominicSisneros">
+    <ns0:name xmlns:ns0="http://xmlns.com/foaf/0.1/">Dominic</ns0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.faa.gov/DominicSisneros">
+    <ns0:phone xmlns:ns0="http://xmlns.com/foaf/0.1/">801-320-2377</ns0:phone>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.faa.gov/DominicSisneros">
+    <ns0:surname xmlns:ns0="http://xmlns.com/foaf/0.1/">Sisneros</ns0:surname>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.faa.gov/DominicSisneros">
+    <ns0:nick xmlns:ns0="http://xmlns.com/foaf/0.1/">Dom</ns0:nick>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.faa.gov/DominicSisneros">
+    <ns0:nick xmlns:ns0="http://xmlns.com/foaf/0.1/">Domster</ns0:nick>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.faa.gov/DominicSisneros">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+</rdf:RDF>

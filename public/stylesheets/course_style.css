@@ -1,0 +1,81 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+ul#menu, ul#menu ul {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  /*background:url(menubg.jpg) ;*/
+  /*width:13em;*/
+		
+}
+
+ul#menu a {
+  display: block;
+  text-decoration: none;	
+}
+
+ul#menu li {
+  margin-top: 1px;
+  				
+}
+
+ul#menu li a {
+  background:url(../images/coursearrow1.jpg) no-repeat left center;
+  color: #00BFFF;	
+  padding: 1em;  
+  font-weight:bold;   
+  text-transform:uppercase;  
+}
+
+ul#menu li a:hover {
+  color: #000;
+   background: #00BFFF;
+ background:url(../images/coursearrow2.jpg) no-repeat left center;
+						
+}
+
+ul#menu li ul li a {
+  padding-left: 28px;
+  background:url(../images/coursearrow1.jpg) no-repeat left center;
+  color: #000;
+  
+  text-transform:capitalize; 
+}
+
+ul#menu li ul li a:hover {
+  padding-left: 30px;
+  background:url(../images/coursearrow2.jpg) no-repeat left center;
+}
+
+ul#menu li ul li ul li a {
+  background:none;
+  color: peru;
+  padding-left: 42px;
+  font-size: 0.8em;
+  font-weight:lighter;   
+  }
+
+ul#menu li ul li  ul li a:hover {
+background:url(../images/coursearrow1.jpg) no-repeat left center;
+  /*padding-left: 10px;*/
+  /*font-size: 0.8em;*/
+  color: peru;
+  padding-left: 42px;
+  font-size: 0.8em;
+  font-weight: bold; 
+}
+/*
+
+.code { border: 1px solid #ccc; list-style-type: decimal-leading-zero; padding: 5px; margin: 0; }
+.code code { display: block; padding: 3px; margin-bottom: 0; }
+.code li { background: #ddd; border: 1px solid #ccc; margin: 0 0 2px 2.2em; }
+.indent1 { padding-left: 1em; }
+.indent2 { padding-left: 2em; }
+*/

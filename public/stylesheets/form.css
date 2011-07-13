@@ -1,0 +1,50 @@
+/* form 1 */
+
+	#form1{
+		background-color: #FFFFFF;
+		margin:1em 0;
+		padding-top:10px;
+		background:url(../images/form_top.gif) no-repeat 0 0;
+		}
+	#form1 fieldset{
+		margin:0;
+		padding:0;
+		border:none;	
+		float:left;
+		display:inline;
+		width:260px;
+		margin-left:25px;
+		}		
+	#form1 legend{display:none;}	
+	#form1 p{margin:.5em 0;}	
+	#form1 label{display:block;}	
+	#form1 input, #form1 textarea{		
+		width:252px;
+		border:1px solid #ddd;
+		background:#fff url(../images/form_input.gif) repeat-x;
+		padding:3px;
+		}		
+	#form1 textarea{
+		height:125px;
+		overflow:auto;
+		}					
+	#form1 p.submit{
+		clear:both;
+		background:url(../images/form_bottom.gif) no-repeat 0 100%;
+		padding:0 25px 20px 25px;
+		margin:0;
+		text-align:left;
+		}	
+	#form1 button{
+		width:150px;
+		height:37px;
+		line-height:37px;		
+		border:none;
+		background:url(../images/form_button.gif) no-repeat 0 0;
+		color:#fff;
+		cursor:pointer;
+		text-align:center;
+		}				
+
+/* // form 1 */
+

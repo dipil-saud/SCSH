@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:hoursLab xmlns:ns0="http://ioe.edu.np/courseOnt#">3</ns0:hoursLab>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:objectives xmlns:ns0="http://ioe.edu.np/courseOnt#">Teach about hardware and software used in networking, the transmission media, the network structure, and the protocols used in networking</ns0:objectives>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:references xmlns:ns0="http://purl.org/dc/terms/">Tanenbaum, "Computer Networks"</ns0:references>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:issuedDate xmlns:ns0="http://ioe.edu.np/courseOnt#">2000-08</ns0:issuedDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:publisher xmlns:ns0="http://ioe.edu.np/courseOnt#">IOE</ns0:publisher>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:hoursLecture xmlns:ns0="http://ioe.edu.np/courseOnt#">3</ns0:hoursLecture>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:name xmlns:ns0="http://ioe.edu.np/courseOnt#">Computer Networks</ns0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:references xmlns:ns0="http://purl.org/dc/terms/">Rosch, "Hardware Bible"</ns0:references>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:hoursTutorial xmlns:ns0="http://ioe.edu.np/courseOnt#">1</ns0:hoursTutorial>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:hasSchool xmlns:ns0="http://ioe.edu.np/courseOnt#">IOE</ns0:hasSchool>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic1">
+    <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic1">
+    <ns0:hours xmlns:ns0="http://ioe.edu.np/courseOnt#">5</ns0:hours>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic1">
+    <ns0:broader xmlns:ns0="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.ioe.edu.np/scsh/course/course1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:narrower xmlns:ns0="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.ioe.edu.np/scsh/course/topic1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic1">
+    <ns0:name xmlns:ns0="http://ioe.edu.np/courseOnt#">Introduction to Computer Networks</ns0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic2">
+    <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic2">
+    <ns0:hours xmlns:ns0="http://ioe.edu.np/courseOnt#">5</ns0:hours>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic2">
+    <ns0:broader xmlns:ns0="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.ioe.edu.np/scsh/course/course1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic2">
+    <ns0:name xmlns:ns0="http://ioe.edu.np/courseOnt#">Local Area Networks</ns0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/subtopic1">
+    <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Subtopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/subtopic1">
+    <ns0:shortDesc xmlns:ns0="http://ioe.edu.np/courseOnt#">Network structures and topologies</ns0:shortDesc>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/subtopic1">
+    <ns0:isPartOf xmlns:ns0="http://purl.org/dc/terms/" rdf:resource="http://www.ioe.edu.np/scsh/course/topic1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic1">
+    <ns0:hasPart xmlns:ns0="http://purl.org/dc/terms/" rdf:resource="http://www.ioe.edu.np/scsh/course/subtopic1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <ns0:name xmlns:ns0="http://ioe.edu.np/courseOnt#">Software Engineering</ns0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <ns0:objectives xmlns:ns0="http://ioe.edu.np/courseOnt#">Provide a systematic approach towards planning, development, implementation and maintainence of systems and also help develop software projects.</ns0:objectives>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <ns0:hoursTutorial xmlns:ns0="http://ioe.edu.np/courseOnt#">0</ns0:hoursTutorial>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <ns0:hoursLab xmlns:ns0="http://ioe.edu.np/courseOnt#">1.5</ns0:hoursLab>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <ns0:publisher xmlns:ns0="http://ioe.edu.np/courseOnt#">IOE</ns0:publisher>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <ns0:hasSchool xmlns:ns0="http://ioe.edu.np/courseOnt#">IOE</ns0:hasSchool>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <ns0:issuedDate xmlns:ns0="http://ioe.edu.np/courseOnt#">2000-08</ns0:issuedDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <ns0:references xmlns:ns0="http://purl.org/dc/terms/">Roger Pressman, "Software Engineering Principles"</ns0:references>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <ns0:references xmlns:ns0="http://purl.org/dc/terms/">Thierauf, "System analysis and design"</ns0:references>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic3">
+    <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic3">
+    <ns0:name xmlns:ns0="http://ioe.edu.np/courseOnt#">Structural Programming</ns0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic3">
+    <ns0:hours xmlns:ns0="http://ioe.edu.np/courseOnt#">3</ns0:hours>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic3">
+    <ns0:broader xmlns:ns0="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.ioe.edu.np/scsh/course/course2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <ns0:narrower xmlns:ns0="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.ioe.edu.np/scsh/course/topic3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/subtopic2">
+    <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Subtopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/subtopic2">
+    <ns0:name xmlns:ns0="http://ioe.edu.np/courseOnt#">Design Considerations</ns0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/subtopic2">
+    <ns0:isPartOf xmlns:ns0="http://purl.org/dc/terms/" rdf:resource="http://www.ioe.edu.np/scsh/course/topic3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic3">
+    <ns0:hasPart xmlns:ns0="http://purl.org/dc/terms/" rdf:resource="http://www.ioe.edu.np/scsh/course/subtopic2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/subtopic1">
+    <ns0:name xmlns:ns0="http://ioe.edu.np/courseOnt#">Network Structure</ns0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:narrower xmlns:ns0="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.ioe.edu.np/scsh/course/topic2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <ns0:hoursLecture xmlns:ns0="http://ioe.edu.np/courseOnt#">4</ns0:hoursLecture>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:references xmlns:ns0="http://purl.org/dc/terms/"></ns0:references>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum2">
+    <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Curriculum"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum2">
+    <ns0:name xmlns:ns0="http://ioe.edu.np/courseOnt#">Computer Engineering</ns0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum2">
+    <ns0:numSem xmlns:ns0="http://ioe.edu.np/courseOnt#">8</ns0:numSem>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum2">
+    <ns0:hasSchool xmlns:ns0="http://ioe.edu.np/courseOnt#">IOE</ns0:hasSchool>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum2sem1">
+    <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Semester"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum2">
+    <ns0:hasSem xmlns:ns0="http://ioe.edu.np/courseOnt#" rdf:resource="http://www.ioe.edu.np/scsh/course/curriculum2sem1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum2sem2">
+    <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Semester"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum2">
+    <ns0:hasSem xmlns:ns0="http://ioe.edu.np/courseOnt#" rdf:resource="http://www.ioe.edu.np/scsh/course/curriculum2sem2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum2sem3">
+    <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Semester"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum2">
+    <ns0:hasSem xmlns:ns0="http://ioe.edu.np/courseOnt#" rdf:resource="http://www.ioe.edu.np/scsh/course/curriculum2sem3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum2sem4">
+    <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Semester"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum2">
+    <ns0:hasSem xmlns:ns0="http://ioe.edu.np/courseOnt#" rdf:resource="http://www.ioe.edu.np/scsh/course/curriculum2sem4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum2sem5">
+    <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Semester"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum2">
+    <ns0:hasSem xmlns:ns0="http://ioe.edu.np/courseOnt#" rdf:resource="http://www.ioe.edu.np/scsh/course/curriculum2sem5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum2sem6">
+    <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Semester"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum2">
+    <ns0:hasSem xmlns:ns0="http://ioe.edu.np/courseOnt#" rdf:resource="http://www.ioe.edu.np/scsh/course/curriculum2sem6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum2sem7">
+    <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Semester"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum2">
+    <ns0:hasSem xmlns:ns0="http://ioe.edu.np/courseOnt#" rdf:resource="http://www.ioe.edu.np/scsh/course/curriculum2sem7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum2sem8">
+    <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Semester"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum2">
+    <ns0:hasSem xmlns:ns0="http://ioe.edu.np/courseOnt#" rdf:resource="http://www.ioe.edu.np/scsh/course/curriculum2sem8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum2sem7">
+    <ns0:hasPart xmlns:ns0="http://purl.org/dc/terms/" rdf:resource="http://www.ioe.edu.np/scsh/course/course1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:isPartOf xmlns:ns0="http://purl.org/dc/terms/" rdf:resource="http://www.ioe.edu.np/scsh/course/curriculum2sem7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum2sem7">
+    <ns0:hasPart xmlns:ns0="http://purl.org/dc/terms/" rdf:resource="http://www.ioe.edu.np/scsh/course/course2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <ns0:isPartOf xmlns:ns0="http://purl.org/dc/terms/" rdf:resource="http://www.ioe.edu.np/scsh/course/curriculum2sem7"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xml:base="file:///home/dipil/Aptana%20RadRails%20Workspace/rails/db/data/courseStorage.rdf">
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:courseName xmlns:ns0="http://ioe.edu.np/courseOnt#">ffff</ns0:courseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <ns0:courseName xmlns:ns0="http://ioe.edu.np/courseOnt#">Computer Networks2232</ns0:courseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <ns0:hasSchool xmlns:ns0="http://ioe.edu.np/courseOnt#">aaa</ns0:hasSchool>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <ns0:shortDesc xmlns:ns0="http://ioe.edu.np/courseOnt#">wwww</ns0:shortDesc>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <ns0:uploader xmlns:ns0="http://ioe.edu.np/courseOnt#">www</ns0:uploader>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <ns0:issued xmlns:ns0="http://purl.org/dc/terms/">rrt</ns0:issued>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <ns0:modified xmlns:ns0="http://purl.org/dc/terms/">yyy</ns0:modified>
+  </rdf:Description>
+</rdf:RDF>

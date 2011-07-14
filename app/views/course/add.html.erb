@@ -6,7 +6,7 @@
 <div id = "propertyselect">
 </div>
 <%else %>
-<% form_tag({:action => 'update_courses_curriculum', :uri => params[:uri] }) do %>
+<% form_remote_tag(:url => {:action => 'update_courses_curriculum', :uri => params[:uri] }, :update => 'details', :html => {}) do %>
 <% @choices = Array.new(1) %>
 <ul>
     <% @choices.each do |choice| %>

@@ -3,7 +3,6 @@
 
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
-  before_filter :set_user
   
   # See ActionController::RequestForgeryProtection for details
   # Uncomment the :secret if you're not using the cookie session store
@@ -13,17 +12,13 @@ class ApplicationController < ActionController::Base
   # Uncomment this to filter the contents of submitted sensitive data parameters
   # from your application log (in this case, all fields with names like "password"). 
   # filter_parameter_logging :password
-  
+ 
+  include ApplicationHelper
   protected
-  
-  def set_user
-      @user = User.new(session[:id], session[:id]) if @user.nil? && session[:id]
-    end 
-  
-  
+
   def login_required
     #puts session[:id]
-    if @user
+    if logged_in?
       #puts "user exists"
       return true
     else

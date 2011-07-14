@@ -3,7 +3,6 @@ class AdminController < ApplicationController
  
   before_filter :login_required, :only => [:admin_page, :logout]
   
-  
   def initialize
     
   end
@@ -16,11 +15,9 @@ class AdminController < ApplicationController
     #puts params[:user]
     #puts params[:pass]
     #authenticate
-    @user = User.new(params[:user], params[:pass])
-    if @user.authenticate?
-      id = params[:user] + "1"  # get the id of the user
-      session[:id] = id
-      #puts params[:return_to]
+    if Admin.exists?(params[:user], params[:pass])
+      session[:scsh_id] = Admin.crypted_username
+      session[:scsh_pass] = Admin.crypted_password
       if params[:return_to]        
         redirect_to params[:return_to]
       else 
@@ -44,16 +41,7 @@ class AdminController < ApplicationController
     #reset_session
     #puts logged_in?
   end
-  
-  def logged_in?
-    if @user 
-      return true
-    else
-      return false
-    end      
-  end
-  
-  
+    
   def admin_view
     render :action => nil
   end
@@ -75,8 +63,6 @@ class AdminController < ApplicationController
     #puts params[:issued]
     #puts params[:modified]
     #puts params[:references]
-    
-    
   end
 
 end  

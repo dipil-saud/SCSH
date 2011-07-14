@@ -4,9 +4,6 @@
     <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Course"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
-    <ns0:name xmlns:ns0="http://ioe.edu.np/courseOnt#">Information System</ns0:name>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
     <ns0:objectives xmlns:ns0="http://ioe.edu.np/courseOnt#">To Introduce and Apply the knowledge of computer bases information system, and designing and setting up complex infomation system.</ns0:objectives>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
@@ -26,9 +23,6 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
     <ns0:issuedDate xmlns:ns0="http://ioe.edu.np/courseOnt#">2000-08</ns0:issuedDate>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
-    <ns0:references xmlns:ns0="http://purl.org/dc/terms/">Kanter, "Managing with information system"</ns0:references>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
     <ns0:references xmlns:ns0="http://purl.org/dc/terms/">Rajaraman, analysis of information systems</ns0:references>
@@ -168,12 +162,6 @@
   <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic2">
     <ns0:hours xmlns:ns0="http://ioe.edu.np/courseOnt#">6</ns0:hours>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic2">
-    <ns0:broader xmlns:ns0="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.ioe.edu.np/scsh/course/course1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
-    <ns0:narrower xmlns:ns0="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.ioe.edu.np/scsh/course/topic2"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/subtopic5">
     <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Subtopic"/>
   </rdf:Description>
@@ -212,12 +200,6 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic3">
     <ns0:hours xmlns:ns0="http://ioe.edu.np/courseOnt#">5</ns0:hours>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic3">
-    <ns0:broader xmlns:ns0="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.ioe.edu.np/scsh/course/course1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
-    <ns0:narrower xmlns:ns0="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.ioe.edu.np/scsh/course/topic3"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/subtopic7">
     <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Subtopic"/>
@@ -597,12 +579,6 @@
   <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic8">
     <ns0:hours xmlns:ns0="http://ioe.edu.np/courseOnt#">6</ns0:hours>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic8">
-    <ns0:broader xmlns:ns0="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.ioe.edu.np/scsh/course/course1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
-    <ns0:narrower xmlns:ns0="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.ioe.edu.np/scsh/course/topic8"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/subtopic28">
     <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Subtopic"/>
   </rdf:Description>
@@ -635,12 +611,6 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
     <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Course"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
-    <ns0:name xmlns:ns0="http://ioe.edu.np/courseOnt#">Artificial Intelligence</ns0:name>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
-    <ns0:objectives xmlns:ns0="http://ioe.edu.np/courseOnt#">Provide basic knowledge of AI, machine learning,natural languages,Expert System,Neural network</ns0:objectives>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
     <ns0:hoursLecture xmlns:ns0="http://ioe.edu.np/courseOnt#">3</ns0:hoursLecture>
@@ -698,12 +668,6 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic11">
     <ns0:hours xmlns:ns0="http://ioe.edu.np/courseOnt#">5</ns0:hours>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic11">
-    <ns0:broader xmlns:ns0="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.ioe.edu.np/scsh/course/course2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
-    <ns0:narrower xmlns:ns0="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.ioe.edu.np/scsh/course/topic11"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/subtopic30">
     <rdf:type rdf:resource="http://ioe.edu.np/courseOnt#Subtopic"/>
@@ -5705,5 +5669,41 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/curriculum1sem1">
     <ns0:hasPart xmlns:ns0="http://purl.org/dc/terms/" rdf:resource="http://www.ioe.edu.np/scsh/course/course51"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:references xmlns:ns0="http://purl.org/dc/terms/">Kanter, "Managing with information system"</ns0:references>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <ns0:name xmlns:ns0="http://ioe.edu.np/courseOnt#">Artificial Intelligence2</ns0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <ns0:objectives xmlns:ns0="http://ioe.edu.np/courseOnt#">Provide basic knowledge of AI, machine learning,natural languages,Expert System,Neural network</ns0:objectives>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course2">
+    <ns0:narrower xmlns:ns0="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.ioe.edu.np/scsh/course/topic2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic2">
+    <ns0:broader xmlns:ns0="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.ioe.edu.np/scsh/course/course2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:narrower xmlns:ns0="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.ioe.edu.np/scsh/course/topic2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/topic2">
+    <ns0:broader xmlns:ns0="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://www.ioe.edu.np/scsh/course/course1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:name xmlns:ns0="http://ioe.edu.np/courseOnt#">Information System</ns0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:hasSchool xmlns:ns0="http://ioe.edu.np/courseOnt#">KEC</ns0:hasSchool>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:hasSchool xmlns:ns0="http://ioe.edu.np/courseOnt#">NEC</ns0:hasSchool>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:references xmlns:ns0="http://purl.org/dc/terms/">AAAA</ns0:references>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:references xmlns:ns0="http://purl.org/dc/terms/">BBBBB</ns0:references>
   </rdf:Description>
 </rdf:RDF>

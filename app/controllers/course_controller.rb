@@ -3,7 +3,7 @@ class CourseController < ApplicationController
   
   require'rdf/redland'
   require 'pp'
-  
+
   def new_select
     @select_array = ["Course", "Topic", "Subtopic", "Curriculum"]
     render :layout => false if params[:navigation]
@@ -190,7 +190,7 @@ class CourseController < ApplicationController
       temp= temp+1
     end
     courseModel.save 
-    redirect_to :action => 'edit', :uri => params[:uri], :navigation => "true"
+    redirect_to :action => 'edit', :uri => params[:uri]
   end
   
   def view
@@ -204,8 +204,7 @@ class CourseController < ApplicationController
     rdf=Redland::Namespace.new("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
     @names = []
     @uris = []
-    
-    if params[:option] == "update"
+    if logged_in?
       @redirect = "edit"
     else
       @redirect = "view_details"
@@ -314,7 +313,7 @@ class CourseController < ApplicationController
     courseModel.model.delete_statement(Redland::Statement.new(semesterNode, dcterms['hasPart'], courseNode))
     courseModel.model.delete_statement(Redland::Statement.new(courseNode, dcterms['isPartOf'], semesterNode))
     courseModel.save
-    redirect_to :action => 'edit', :uri => params[:uri], :navigation => true
+    redirect_to :action => 'edit', :uri => params[:uri]
     
   end
   
@@ -378,8 +377,8 @@ class CourseController < ApplicationController
       end
     end
     
-    courseModel.save 
-    redirect_to :action => 'edit', :uri => params[:subject], :navigation => "true"
+    courseModel.save
+    redirect_to :action => 'edit', :uri => params[:subject]
   end
   
   
@@ -520,7 +519,7 @@ class CourseController < ApplicationController
       end
     end
     courseModel.save
-    redirect_to :action => 'edit', :uri => params[:subject], :navigation => true
+    redirect_to :action => 'edit', :uri => params[:subject]
     
   end
   

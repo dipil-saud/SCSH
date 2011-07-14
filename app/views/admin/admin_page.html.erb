@@ -12,7 +12,7 @@
 		<table>
 			<tr>
 		<td width= '250px'><h4>Administrator Select</h4></td>		
-		<td> &nbsp;&nbsp;<%= link_to "&nbsp;&nbsp;View&nbsp;&nbsp;", {:controller => "course", :action => "view" , :option => "view"}, { :class => "large awesome" } %> &nbsp;&nbsp;</td>
+		<td> &nbsp;&nbsp;<%= link_to "&nbsp;&nbsp;View&nbsp;&nbsp;", {:controller => "course", :action => "navigate"}, { :class => "large awesome" } %> &nbsp;&nbsp;</td>
 		<td>&nbsp;&nbsp; <%= link_to "&nbsp;&nbsp;Add&nbsp;&nbsp;",{ :controller => 'course' , :action => 'new_select'}, { :class => "large awesome" } %>&nbsp;&nbsp;</td>
 		<td> &nbsp;&nbsp;<%= link_to  "&nbsp;Update&nbsp;", {:controller => "course", :action => "view" , :option => "update"},  { :class => "large awesome" } %>&nbsp;&nbsp;</td>
 		</tr></table>

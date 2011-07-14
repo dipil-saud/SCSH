@@ -22,7 +22,6 @@
             <tr>
                 <td>
                     <% predicateNode = Redland::Node.new(Redland::Uri.new(predicate)) -%>
-
                     
                     <% pred_name = @nameModel.model.object( predicateNode, @ioe['label']).literal.value -%>
                     <%= pred_name+ " : " %>
@@ -43,7 +42,9 @@
 									<% sem.get_properties(@dcterms['hasPart']).each do |course| %>
 										<td><% courseNode = @courseModel.model.object( course, @ioe['name']) %>
 										<%= courseNode.literal.value %>
-										<%= button_to "Remove", :action => "delete_curriculum_course", :uri => @courseModel.uri, :semester => object.uri.to_s, :course =>course.uri.to_s %>
+										<%= button_to_remote "Remove",
+                                         :update => 'details', 
+                                         :url => {:action => "delete_curriculum_course", :uri => @courseModel.uri, :semester => object.uri.to_s, :course =>course.uri.to_s} %>
 									    </td>
 									<% end -%>
 									</tr></table></td>

@@ -12,7 +12,6 @@ RPH::Navigation::Builder.config do |navigate|
     end
     menu.item AdminController, :text => 'Admin',:if => Proc.new { |view| view.logged_in? } do |sub_menu|      
       sub_menu.item :addnew, :text => 'Add', :path => 'addnew_path', :if => Proc.new { |view| view.logged_in? }
-      sub_menu.item :view, :text => 'View', :path => 'adminview_path', :if => Proc.new { |view| view.logged_in? }
       sub_menu.item :update, :text => 'Update', :path => 'update_path', :if => Proc.new { |view| view.logged_in? }      
       sub_menu.item :logout, :text => 'Logout', :path => 'logout_path', :if => Proc.new { |view| view.logged_in? }
       sub_menu.item :login, :text => 'Login', :path => 'login_path', :if => Proc.new { |view| !view.logged_in? }

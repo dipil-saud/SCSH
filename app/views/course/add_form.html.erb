@@ -1,10 +1,10 @@
 <% if @flag == 0 %>
-			<% form_tag({:action => 'add_operation', :subject => params[:uri], :predicate => params[:type], :objtype => "Literal" }) do%>
+			<% form_remote_tag(:update => "details", :url => {:action => 'add_operation', :subject => params[:uri], :predicate => params[:type], :objtype => "Literal" }, :html => {}) do%>
 	    	<%= text_field_tag :value %>
 			<%= submit_tag 'Add' %>  
 			<% end -%>
 <% else %>
-		<% form_tag({:action => 'add_operation', :subject => params[:uri], :predicate => params[:type], :objtype => "Resource" } ) do%>
+		<% form_remote_tag(:update => "details", :url => {:action => 'add_operation', :subject => params[:uri], :predicate => params[:type], :objtype => "Resource" }, :html => {} ) do%>
     	<%= select_tag :value, options_for_select([""]) +options_for_select(@uris.collect{ |u| [@names[@uris.index(u)] , u] })%>
 		<%= submit_tag 'Add' %>   
 		<% end -%>

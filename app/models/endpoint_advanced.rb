@@ -207,6 +207,18 @@ class Endpoint_advanced
       #puts query_string
       query = Query_advanced.new
       return query.execute(self.endpoint_string, query_string)
+    elsif type == ioe['Subtopic']
+      subtopicName = courseModel.model.object(uriNode,ioe['name']).literal.value
+      query_string += "?result " + self.book_title + " ?object. "
+      subtopicName = ".*"+subtopicName+".*"    
+      subtopicName.gsub!(" ",".*")
+      query_string += "FILTER ( regex(?object, \"#{subtopicName}\",\"i\")"
+      query_string += ")."
+      query_string +=  "}"
+      query_string += "LIMIT "+6.to_s
+      #puts query_string
+      query = Query_advanced.new
+      return query.execute(self.endpoint_string, query_string)
     end
     
     

@@ -8,6 +8,7 @@ class Query_advanced
       
     sparql = SPARQL::SPARQLWrapper.new(endpoint_string)
     sparql.query_string = query_string
+    ret = sparql.query
     if ret != nil
       xmldoc = ret.convertXML
       return get_result_array(xmldoc)

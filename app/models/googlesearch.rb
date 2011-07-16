@@ -67,11 +67,12 @@ require 'pp'
         options = default_options.merge(options)
         options[:v] = "1.0"
         options[:rsz] = "large"
-        options [:start] = 1
+        options [:start] ||= 1
         query_string = options.collect { |key, value| "#{key}=#{CGI::escape(value.to_s)}" }.join("&")
         uri = "http://ajax.googleapis.com/ajax/services/search/#{type}?#{query_string}"
         #puts uri            
         result = JSON.parse(open(uri).read)
+        p "#{result['responseStatus']} - #{result['responseDetails']}"
         raise GoogleSearchError, "#{result['responseStatus']} - #{result['responseDetails']}" unless result["responseStatus"] == 200
         
         result

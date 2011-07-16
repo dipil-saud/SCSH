@@ -5,7 +5,7 @@ class Rdfmodel < Resource
   
   attr_accessor :filename
   
-  def initialize (file)
+  def initialize(file)
     
     self.model = Redland::Model.new()
     self.filename = file.to_s

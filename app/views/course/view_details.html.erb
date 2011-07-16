@@ -7,7 +7,14 @@
 	<body>
 		<div id = 'details' >
 			<table id="box-table-a">
-			<thead><th><%= @courseModel.model.object(@subject,@ioe['name']).literal.value %></th><th></th></thead>	
+			<thead>
+        <th><%= name = @courseModel.model.object(@subject,@ioe['name']).literal.value %></th>
+        <th>
+          <% if [@ioe['Course'], @ioe["Topic"], @ioe["Subtopic"]].include?(@subject_type) %>
+            <%= link_to "Find Study Materials", {:controller => 'say', :action => 'hello', :search => name, :uri => @subject, :courseSearch => true}, :class => "course_materials_link" %>
+          <% end %>
+        </th>
+      </thead>	
 			<tbody>	
 			<% @predicates.each { |predicate| %>
 			<tr>

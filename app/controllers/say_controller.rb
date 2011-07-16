@@ -22,14 +22,11 @@ class SayController < ApplicationController
     self.article_endpoint = []
     eprint = Endpointa.new("eprint")
     self.article_endpoint<<eprint
-  
-  self.fact_endpoint = []
-  dbpedia = Facts_endpoint.new("dbpedia")
-  self.fact_endpoint<<dbpedia
-  
-  self.resourceFactory = Resource_factory.new
-  
-end
+    self.fact_endpoint = []
+    dbpedia = Facts_endpoint.new("dbpedia")
+    self.fact_endpoint<<dbpedia
+    self.resourceFactory = Resource_factory.new
+  end
 
 
 def hello

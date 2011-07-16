@@ -13,28 +13,22 @@
 								<% semResource = @courseModel.model.get_resource(semester) %>
 								<% courses = semResource.get_properties(@dcterms['hasPart']) %>
 								<% courses.each do |course| %>
-								<li><%= link_to_remote @courseModel.model.object(course, @ioe['name']).literal.value, :update => 'detailed_view',
+								<li>
+                  <%= link_to_remote @courseModel.model.object(course, @ioe['name']).literal.value, :update => 'details',
                                                 :url => {:controller => 'course', :action => 'view_details', :uri => course.uri.to_s } %>
-									 
 									<ul>
 										<% courseResource = @courseModel.model.get_resource(course) %>
 										<% topics = courseResource.get_properties(@skos['narrower']) %>
 										<% topics.each do |topic| %>
-										<li><%= link_to @courseModel.model.object(topic, @ioe['name']).literal.value,
-                                                :controller => 'say', :action => 'hello',
-												:search => @courseModel.model.object(topic, @ioe['name']).literal.value,
-												:uri => topic.uri.to_s, :courseSearch => true
-                                     		%>									
-											
+										<li>
+                      <%= link_to_remote @courseModel.model.object(topic, @ioe['name']).literal.value, :update => 'details',
+                                                :url => {:controller => 'course', :action => 'view_details', :uri => topic.uri.to_s } %>  
 											<ul>
 												<% topicResource = @courseModel.model.get_resource(topic) %>
 												<% subtopics = topicResource.get_properties(@dcterms['hasPart']) %>
 												<% subtopics.each do |subtopic| %>
-													<li><%= link_to @courseModel.model.object(subtopic, @ioe['name']).literal.value,
-                                                			:controller => 'say', :action => 'hello',
-															:search => @courseModel.model.object(subtopic, @ioe['name']).literal.value,
-															:uri => subtopic.uri.to_s, :courseSearch => true
-                                     			%>	
+													<li><%= link_to_remote @courseModel.model.object(subtopic, @ioe['name']).literal.value, :update => 'details',
+                                                :url => {:controller => 'course', :action => 'view_details', :uri => subtopic.uri.to_s } %> 	
 														<ul></ul>
 													</li>
 												<% end %>
@@ -49,7 +43,7 @@
 					<% end %>			
 				</li>
 		</div>
-    <div id = "detailed_view">
+    <div id = "details">
     </div>
 	</body>
 	</html>

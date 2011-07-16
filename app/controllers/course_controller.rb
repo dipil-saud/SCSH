@@ -255,10 +255,10 @@ class CourseController < ApplicationController
       
       @predicates = @courseModel.get_predicates
       @subject = @courseModel.model.get_resource(params[:uri])
-      
+      @subject_type = @subject.get_properties(@rdf['type'])[0]
       ##puts @subject
       ##puts @predicates
-      
+
       ##puts @courseModel.object(subject,@ioe['name'])
       ##puts @courseModel.model.predicates(@subjects,nil)
       #@triples = @courseModel.model.find(@subject, nil, nil)

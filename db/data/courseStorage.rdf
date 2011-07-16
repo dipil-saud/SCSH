@@ -5706,4 +5706,85 @@
   <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
     <ns0:references xmlns:ns0="http://purl.org/dc/terms/">BBBBB</ns0:references>
   </rdf:Description>
+  <rdf:Description rdf:about="http://ioe.edu.np/courseOnt#name">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">Title</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ioe.edu.np/courseOnt#numSem">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">Total Semesters</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ioe.edu.np/courseOnt#hasSem">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">Semester Courses</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ioe.edu.np/courseOnt#objectives">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">Objectives</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ioe.edu.np/courseOnt#hoursLecture">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">Lecture Hours per week</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ioe.edu.np/courseOnt#hoursTutorial">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">Tutorial Hours per week</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ioe.edu.np/courseOnt#hoursLab">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">Lab Hours per week</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ioe.edu.np/courseOnt#hours">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">Total Hours</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ioe.edu.np/courseOnt#publisher">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">Publisher</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ioe.edu.np/courseOnt#hasSchool">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">Taught At</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ioe.edu.np/courseOnt#issuedDate">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">Created On</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ioe.edu.np/courseOnt#shortDesc">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">Short Description</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ioe.edu.np/courseOnt#Course">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">Course</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ioe.edu.np/courseOnt#Topic">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">Topic</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ioe.edu.np/courseOnt#Subtopic">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">Subtopic</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ioe.edu.np/courseOnt#Curriculum">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">Curriculum</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ioe.edu.np/courseOnt#Semester">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">Semester</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">is a</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">Included in Course</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">Includes Topics</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/references">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">References</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/isPartOf">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">Is Part of</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/hasPart">
+    <ns0:label xmlns:ns0="http://ioe.edu.np/courseOnt#">Contains</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+    <ns0:reverse xmlns:ns0="http://ioe.edu.np/courseOnt#" rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+    <ns0:reverse xmlns:ns0="http://ioe.edu.np/courseOnt#" rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/isPartOf">
+    <ns0:reverse xmlns:ns0="http://ioe.edu.np/courseOnt#" rdf:resource="http://purl.org/dc/terms/hasPart"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/hasPart">
+    <ns0:reverse xmlns:ns0="http://ioe.edu.np/courseOnt#" rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+  </rdf:Description>
 </rdf:RDF>

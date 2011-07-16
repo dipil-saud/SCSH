@@ -75,27 +75,15 @@ class Facts_endpoint
     
     result_uri.concat(result_uri2)
     ##puts query_string
-    res = Googlesearch.web :q => "site:  site:dbpedia.org dbpedia.org/resource/ #{search_phrase}"
-    res ['responseData']['results'].each do |result|
-    #print result['title']
-    # print "  "
-    if result['unescapedUrl'].include?("http://dbpedia.org/resource/")
-      #puts result['unescapedUrl']
-      result_uri << result['unescapedUrl'] 
+    no_of_results = 4 * 8; # 8 results per request
+    4.times do |request_no|
+      res = Googlesearch.web :q => "site:  site:dbpedia.org dbpedia.org/resource/ #{search_phrase}", :start => request_no * 8 +1
+      res ['responseData']['results'].each do |result|
+        if result['unescapedUrl'].include?("http://dbpedia.org/resource/")
+          result_uri << result['unescapedUrl'] 
+        end
+      end
     end
-    #pp result
-    end
-    
-    res = Googlesearch2.web :q => "site:  site:dbpedia.org dbpedia.org/resource/ #{search_phrase}"
-    res ['responseData']['results'].each do |result|
-    #print result['title']
-    # print "  "
-    if result['unescapedUrl'].include?("http://dbpedia.org/resource/")
-      #puts result['unescapedUrl']
-      result_uri << result['unescapedUrl'] 
-    end
-    #pp result
-  end
     
     result_uri.uniq!
     #query = Query.new

@@ -140,7 +140,8 @@ html ul.navigation li ul.sub-navigation li a:hover { /*--Hover effect for subnav
    width:980px; 
    clear:both;
    overflow:hidden;
-   margin:0px 0px 20px 0px;  
+   margin:0px 0px 20px -15px;
+   padding-bottom: 20px;  
 } 
 
 .tabbed_box h4 {   
@@ -324,7 +325,5 @@ border-right:0 none;
 	margin:20px 0px 0px 0px;
 	padding:15px 0px 0px 0px;
 }
-
-
 
 

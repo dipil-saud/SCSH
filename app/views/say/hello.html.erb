@@ -31,30 +31,32 @@
   <div class="tabbed_area">  
   
       <ul class="tabs">  
-    <li><a href="javascript:tabSwitch_2(1, 4, 'tab_', 'content_');" 
-	onclick = "<%= remote_function(:update => "content_1",:url => { :action => :generate_content, :type => "Book", :search => @search_phrase }) %>"
+    <li><a href="javascript:" 
+	onclick = "tabSwitch_2(1, 4, 'tab_', 'content_');<%= remote_function(:update => "content_1",:url => { :action => :generate_content, :type => "Book", :search => @search_phrase }, :before => "$('indicator1').show(  )", :complete => "$('indicator1').hide(  )") %>"
 	id="tab_1" class="active">Books</a>
 	</li>  
     
-	<li><a href="javascript:tabSwitch_2(2, 4, 'tab_', 'content_');" 
-	onclick = "<%= remote_function(:update => "content_2",:url => { :action => :generate_content, :type => "Article", :search => @search_phrase }) %>"
+	<li><a href="javascript:" 
+	onclick = "tabSwitch_2(2, 4, 'tab_', 'content_');<%= remote_function(:update => "content_2",:url => { :action => :generate_content, :type => "Article", :search => @search_phrase }, :before => "$('indicator2').show(  )", :complete => "$('indicator2').hide(  )") %>"
 	id="tab_2">Articles</a>
 	</li>  
     
-	<li><a href="javascript:tabSwitch_2(3, 4, 'tab_', 'content_');" 
-	onclick = "<%= remote_function(:update => "content_3",:url => { :action => :generate_content, :type => "Fact", :search => @search_phrase }) %>"
+	<li><a href="javascript:" 
+	onclick = "tabSwitch_2(3, 4, 'tab_', 'content_');<%= remote_function(:update => "content_3",:url => { :action => :generate_content, :type => "Fact", :search => @search_phrase }, :before => "$('indicator3').show(  )", :complete => "$('indicator3').hide(  )") %>"
 	id="tab_3">Facts</a>
 	</li>  
 	
-	<li><a href="javascript:tabSwitch_2(4, 4, 'tab_', 'content_');" 
-	onclick = "<%= remote_function(:update => "content_4",:url => { :action => :generate_content, :type => "Twitter", :search => @search_phrase }) %>" 
+	<li><a href="javascript:" 
+	onclick = "tabSwitch_2(4, 4, 'tab_', 'content_');<%= remote_function(:update => "content_4",:url => { :action => :generate_content, :type => "Twitter", :search => @search_phrase }, :before => "$('indicator4').show(  )", :complete => "$('indicator4').hide(  )") %>" 
 	id="tab_4">Twitter</a>
 	</li>
 	
 </ul>  
   
      <div id="content_1" class="content">
-     	
+     		 	<span id="indicator1" style="display: none; text-align:center; margin-left:auto; margin-right:auto;">
+			<img src="/images/ajax-loader.gif" align='center' style=" display: block; margin-left: auto;  margin-right: auto;padding: 50px 10px 100px 10px;" />
+		</span>
      	<% if @title.length > 0 %>
 			<ul>
 			<% for k in 0..@title.length-1 %> 
@@ -73,15 +75,21 @@
 	 </div>  
 	 
      <div id="content_2" class="content">	
-	 	  
+	 	  	<span id="indicator2" style="display: none; text-align:center; margin-left:auto; margin-right:auto;">
+			<img src="/images/ajax-loader.gif" align='center' style=" display: block; margin-left: auto;  margin-right: auto;padding: 50px 10px 100px 10px;" />
+		</span>
 	 </div>  
 	 
      <div id="content_3" class="content">	
-	
+	 	<span id="indicator3" style="display: none; text-align:center; margin-left:auto; margin-right:auto;">
+			<img src="/images/ajax-loader.gif" align='center' style=" display: block; margin-left: auto;  margin-right: auto; padding: 50px 10px 100px 10px;" />
+		</span>
 	</div>  
 	
 	<div id="content_4" class="content">
-	   
+	    	<span id="indicator4" style="display: none; text-align:center; margin-left:auto; margin-right:auto; margin-top:20px;">
+			<img src="/images/ajax-loader.gif" align='center' style=" display: block; margin-left: auto;  margin-right: auto;padding: 50px 10px 100px 10px;" />
+		</span>
 	</div>  
 
    </div>  
@@ -101,8 +109,8 @@
 		-->
 		<div class="content-section">
 		<h3>Details</h3>
-		<span id="indicator" style="display: none; text-align:center; margin-left:auto; margin-right:auto;">
-			<img src="/images/ajax-loader.gif" align='center' style=" display: block; margin-left: auto;  margin-right: auto;" />
+		<span id="indicator" style="display: none; text-align:center; margin-left:auto; margin-right:auto;margin-top:20px;">
+			<img src="/images/ajax-loader.gif" align='center' style=" display: block; margin-left: auto;  margin-right: auto; padding-top:50px;" />
 		</span>
 		<p> 		
 		<div id="resource">

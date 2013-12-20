@@ -1,6 +1,6 @@
 Semantic Course Study Helper
 
-This application has a defined ontology for Educational Courses and also provides a interface for creating, updating and viewing the course information. The data is stored in simple rdf files so is easily integrable. 
+This application has a defined ontology for Educational Courses and also provides a interface for creating, updating and viewing the course information. The data is stored in simple rdf files so is easily integrable.
 
 Moreover, this app also provides search interfaces to various sematic web endpoints such as DBLP for books and Citeseer and some others for computer related articles. It uses google search to query the dblp dataset and also uses the twitter api to find tweets.
 
@@ -14,12 +14,15 @@ Github: https://github.com/dajobe
 
 Packages to install: Raptor, Rasqal, Redland & Redland-ruby-bindings(Redland-Bindings)
 
+To install on OSX:
+* brew install redland
+* be rake --rakefile ./install_redland_rakefile install_redland_bindings
 
 App tested only with ruby 1.8.7 and rails 2.3.5
 
 Installation instructions:
 1. Install the bundler gem -> gem install bundler
-2. Goto project folder -> bundle 
+2. Goto project folder -> bundle
 3. Then in project folder -> ./script/server
 
 

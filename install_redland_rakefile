@@ -1,0 +1,5 @@
+task :install_redland_bindings do
+  system "curl http://download.librdf.org/source/redland-bindings-1.0.16.1.tar.gz | tar xz"
+  system "cd redland-bindings-1.0.16.1 && ./configure --with-ruby && make install"
+  system "rm -rf redland-bindings-1.0.16.1"
+end

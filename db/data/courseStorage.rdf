@@ -7,9 +7,6 @@
     <ns0:objectives xmlns:ns0="http://ioe.edu.np/courseOnt#">To Introduce and Apply the knowledge of computer bases information system, and designing and setting up complex infomation system.</ns0:objectives>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
-    <ns0:hoursLecture xmlns:ns0="http://ioe.edu.np/courseOnt#">3</ns0:hoursLecture>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
     <ns0:hoursTutorial xmlns:ns0="http://ioe.edu.np/courseOnt#">1</ns0:hoursTutorial>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
@@ -5786,5 +5783,11 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/terms/hasPart">
     <ns0:reverse xmlns:ns0="http://ioe.edu.np/courseOnt#" rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course7">
+    <ns0:references xmlns:ns0="http://purl.org/dc/terms/">asdfad</ns0:references>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ioe.edu.np/scsh/course/course1">
+    <ns0:hoursLecture xmlns:ns0="http://ioe.edu.np/courseOnt#">5</ns0:hoursLecture>
   </rdf:Description>
 </rdf:RDF>

@@ -1,12 +1,6 @@
-/db/data/backup/courseStorage20110716163539.rdf
-/db/data/backup/courseStorage20110716163503.rdf
-/db/data/backup/courseStorage20110716162014.rdf
-/db/data/backup/courseStorage20110716152020.rdf
-/db/data/backup/courseStorage20110716151550.rdf
-/db/data/backup/courseStorage20110716143821.rdf
-/db/data/backup/courseStorage20110716141230.rdf
-/db/data/backup/courseStorage20110716135630.rdf
-/db/data/external_courses/new_data.rdf
+/db/data/
 
 db/data/backup
 tmp
+
+log
